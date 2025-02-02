@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation xmlns="http://www.digicontrol.de/TR/PlantDocumentation/1.1" version="1.1" bacnet="0" cadVersion="11.31.A">
+  <summary>
+    <item name="fileName" value="Holenkwartier_RK01_OS03_11_31"/>
+    <item name="fileRevision" value=""/>
+    <item name="projectNumber" value="20191278"/>
+    <item name="plantMer" value="Holen-OS03"/>
+    <item name="plantIdentifier" value="HOLENKWARTIER-RK01-OS03"/>
+    <item name="authorName" value="N.Sijm"/>
+    <item name="authorCompany" value="Schouten Techniek"/>
+    <item name="clientName" value=""/>
+    <item name="clientStreet" value=""/>
+    <item name="clientCity" value=""/>
+    <item name="clientTelephone" value=""/>
+    <item name="plannerName" value=""/>
+    <item name="plannerStreet" value=""/>
+    <item name="plannerCity" value=""/>
+    <item name="plannerTelephone" value=""/>
+    <item name="facilityName" value="Holenkwartier Hoorn"/>
+    <item name="facilityStreet" value=""/>
+    <item name="facilityCity" value="Hoorn"/>
+    <item name="facilityCountry" value=""/>
+  </summary>
+  <charts>
+    <chart text="Hardware [0..55]"/>
+    <chart text="Hardware [56..111]"/>
+    <chart text="Hardware [112..167]"/>
+    <chart text="Hardware [168..223]"/>
+    <chart text="Hardware [224..279]"/>
+    <chart text="Hardware [280..335]"/>
+    <chart text="Hardware [336..391]"/>
+    <chart text="Hardware [392..447]"/>
+    <chart text="Hardware [448..503]"/>
+    <chart text="Hardware [504..559]"/>
+    <chart text="Hardware [560..615]"/>
+    <chart text="Hardware [616..671]"/>
+    <chart text="Hardware [672..727]"/>
+    <chart text="Hardware [728..783]"/>
+    <chart text="Hardware [784..839]"/>
+    <chart text="Hardware [840..895]"/>
+    <chart text="Hardware [896..951]"/>
+    <chart text="Hardware [952..999]"/>
+    <chart text="Verzenden"/>
+    <chart text="Ontvangen"/>
+    <chart text="Regeneratie">
+      <difDialog position="1.1" text="Regeneratie           Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Mastercontroller status:" value="Rust" readonly="1"/>
+        <dataPoint pin="2" text="Mastercontroller status overig:" value="Spuien" readonly="1"/>
+        <dataPoint pin="5" text="Rust regeneratie" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Regeneratie bijverwarmen aanvoer" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Regeneratie bijverwarmen retour" value="Nee" readonly="1"/>
+        <dataPoint pin="8" text="Regeneratie directe energiebron WP" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="1.2" text="Regeneratie           Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Regeneratie directe energiebron CV" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Regeneratie controle beschikbaarheid" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Spoelen discfilter.................:" value="Uit" readonly="1"/>
+      </difDialog>
+      <difDialog position="1.3" text="Regeneratie           Algemeen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="3" text="Actuele referentie watertemperatuur" value="17 °C" readonly="1"/>
+        <dataPoint pin="6" text="Vrijgave o.b.v. watertemperatuur:" value="Aan" readonly="1"/>
+        <dataPoint pin="9" text="Min. watertemp vrijg. TEO.......:" value="13.0 °C" readonly="0"/>
+        <dataPoint pin="10" text="Virtuele koudevraag bij Twater &gt;:" value="16.0 °C" readonly="0"/>
+        <dataPoint pin="11" text="Verlaging min. watertemp nacht..:" value="1.0 °C" readonly="0"/>
+      </difDialog>
+      <difDialog position="1.4" text="Regeneratie           P4.1 pomp TEO" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand" value="0 min" readonly="1"/>
+        <dataPoint pin="2" text="Stand" value="0 min" readonly="1"/>
+        <dataPoint pin="9" text="Rusttijd pomp...........:" value="0 min" readonly="0"/>
+        <dataPoint pin="10" text="Draaitijd pomp..........:" value="0 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="1.5" text="Regeneratie           Bijverw.aanv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Inschakelpunt bijverwarmen aanv..:" value="5.0 °C" readonly="0"/>
+        <dataPoint pin="10" text="Uitschakelpunt bijverwarmen aanv.:" value="0.0 °C" readonly="0"/>
+        <dataPoint pin="11" text="Tijdvertraging uitschakelen bijv.:" value="999 s" readonly="0"/>
+        <dataPoint pin="12" text="Setpoint vrijgave flow P2.1......:" value="1.0 m3" readonly="0"/>
+        <dataPoint pin="13" text="Tijdsvertraging..................:" value="1 m" readonly="0"/>
+      </difDialog>
+      <difDialog position="1.6" text="Regeneratie           Bijverw.ret" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Inschakelpunt bijverwarmen retour.:" value="5.0 °C" readonly="0"/>
+        <dataPoint pin="10" text="Uitschakelpunt bijverwarmen retour" value="0.0 °C" readonly="0"/>
+        <dataPoint pin="11" text="Tijdvertraging uitschakelen bijverwarmen retour" value="60 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="1.7" text="Regeneratie           Directe EB WP" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Inschakelpunt directe energiebron warmtepomp" value="0.0 °C" readonly="0"/>
+        <dataPoint pin="10" text="Uitschakelpunt directe energiebron warmtepomp" value="0.0 °C" readonly="0"/>
+        <dataPoint pin="11" text="Tijdvertraging uitschakelen directe energiebron warmtepomp" value="999 s" readonly="0"/>
+        <dataPoint pin="12" text="Minimale oppervlaktewatertemp...:" value="9 °C" readonly="0"/>
+      </difDialog>
+      <difDialog position="1.8" text="Regeneratie           Directe EB CV" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Inschakelpunt directe energiebron CV" value="1.0 °C" readonly="0"/>
+        <dataPoint pin="10" text="Uitschakelpunt directe energiebron CV" value="0.0 °C" readonly="0"/>
+        <dataPoint pin="11" text="Tijdvertraging uitschakelen directe energiebron CV" value="999 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="1.9" text="Regeneratie           Configuratie" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Vrijgave BS2: Bijverwarmen aanvoer" value="Ja" readonly="0"/>
+        <dataPoint pin="10" text="Vrijgave BS3: Bijverwarmen retour" value="Nee" readonly="0"/>
+        <dataPoint pin="11" text="Vrijgave BS6: Spoelen................:" value="1" readonly="0"/>
+        <dataPoint pin="15" text="Vrijgave BS4: Directe EB warmtepomp" value="Nee" readonly="0"/>
+        <dataPoint pin="16" text="Vrijgave BS5: Directe EB CV" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="1.10" text="Regeneratie           PID regeling" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Actuele meting" value="0.0 °C" readonly="1"/>
+        <dataPoint pin="9" text="Setpoint regeling" value="24.0 °C" readonly="0"/>
+        <dataPoint pin="10" text="P-aandeel" value="30.0" readonly="0"/>
+        <dataPoint pin="11" text="I-tijd" value="20 s" readonly="0"/>
+        <dataPoint pin="12" text="D-tijd" value="0 s" readonly="0"/>
+        <dataPoint pin="13" text="Setpoint in BS bijverwarmen aanvoer" value="18.0 °C" readonly="0"/>
+      </difDialog>
+      <difDialog position="1.11" text="Regeneratie           Pomp P4.1-1&amp;2" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Bedrijfsuren.................:" value="7768 h" readonly="1"/>
+        <dataPoint pin="15" text="Auto=0 Hand=1 ...............:" value="Auto" readonly="0"/>
+        <dataPoint pin="16" text="Handmatig aan -uit...........:" value="Uit" readonly="0"/>
+      </difDialog>
+      <whrDialog position="1.12" text="Regeneratie           Nachtklok" userLevel="1">
+        <dayOfWeek start="01:00" end="06:00"/>
+        <dayOfWeek start="01:00" end="06:00"/>
+        <dayOfWeek start="01:00" end="06:00"/>
+        <dayOfWeek start="01:00" end="06:00"/>
+        <dayOfWeek start="01:00" end="06:00"/>
+        <dayOfWeek start="01:00" end="06:00"/>
+        <dayOfWeek start="01:00" end="06:00"/>
+        <manual value="0"/>
+        <autoClear value="0"/>
+      </whrDialog>
+    </chart>
+    <chart text="Regeneratie aanvullend">
+      <difDialog position="2.1" text="Regeneratie aanvullendDiscfilter" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Drukversch. over discfilter" value="2.0 bar" readonly="1"/>
+      </difDialog>
+      <difDialog position="2.2" text="Regeneratie aanvullendDiscf tellers" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Teller spoelacties filterkolom 1:" value="9999999" readonly="1"/>
+        <dataPoint pin="2" text="Teller spoelacties filterkolom 2:" value="9999999" readonly="1"/>
+        <dataPoint pin="3" text="Teller spoelacties filterkolom 2:" value="9999999" readonly="1"/>
+        <dataPoint pin="4" text="Teller sturingen bypassklep.....:" value="9999999" readonly="1"/>
+      </difDialog>
+      <difDialog position="2.3" text="Regeneratie aanvullendDiscf. bev." userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Teller spoelacties dit uur......:" value="99999" readonly="1"/>
+        <dataPoint pin="2" text="Tijdsduur huidige spoelactie....:" value="99 min" readonly="1"/>
+        <dataPoint pin="5" text="Max tijdsduur spoelen discfilter" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Max. aantal spoelacties per uur.:" value="12" readonly="0"/>
+        <dataPoint pin="10" text="Maximale tijdsduur spoelactie...:" value="15 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="2.4" text="Regeneratie aanvullendTSA" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Drukverschil over TSA............:" value="0.8 bar" readonly="1"/>
+        <dataPoint pin="5" text="Terugspoelen TSA gewenst" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Maximaal drukverschil............:" value="1.6 bar" readonly="0"/>
+        <dataPoint pin="10" text="Vertraging..:" value="30 min" readonly="0"/>
+        <dataPoint pin="11" text="Uitschakeldruk spoelen...........:" value="0.3 bar" readonly="0"/>
+        <dataPoint pin="12" text="Max. tijdsduur:" value="10 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="2.5" text="Regeneratie aanvullendWisselkleppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Stand 0=normaal,1=terugspoelen,2=bypass TSA" value="0" readonly="0"/>
+        <dataPoint pin="15" text="Wisselkleppensectie auto/hand...:" value="Hand" readonly="0"/>
+      </difDialog>
+      <difDialog position="2.6" text="Regeneratie aanvullendWisselkleppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Stand wisselklep M6.1........:" value="Open" readonly="1"/>
+        <dataPoint pin="6" text="Stand wisselklep M6.2........:" value="Open" readonly="1"/>
+        <dataPoint pin="7" text="Stand wisselklep M6.3........:" value="Open" readonly="1"/>
+        <dataPoint pin="8" text="Stand wisselklep M6.4........:" value="Open" readonly="1"/>
+      </difDialog>
+      <whrDialog position="2.7" text="Regeneratie aanvullendBep.ref.temp" userLevel="1">
+        <dayOfWeek start="08:00" end="08:10"/>
+        <dayOfWeek start="08:00" end="08:10"/>
+        <dayOfWeek start="08:00" end="08:10"/>
+        <dayOfWeek start="08:00" end="08:10"/>
+        <dayOfWeek start="08:00" end="08:10"/>
+        <dayOfWeek start="08:00" end="08:10"/>
+        <dayOfWeek start="08:00" end="08:10"/>
+        <manual value="0"/>
+        <autoClear value="0"/>
+      </whrDialog>
+      <whrDialog position="2.8" text="Regeneratie aanvullendBep.ref.temp" userLevel="1">
+        <dayOfWeek start="20:00" end="20:10"/>
+        <dayOfWeek start="20:00" end="20:10"/>
+        <dayOfWeek start="20:00" end="20:10"/>
+        <dayOfWeek start="20:00" end="20:10"/>
+        <dayOfWeek start="20:00" end="20:10"/>
+        <dayOfWeek start="20:00" end="20:10"/>
+        <dayOfWeek start="20:00" end="20:10"/>
+        <manual value="0"/>
+        <autoClear value="0"/>
+      </whrDialog>
+      <difDialog position="2.9" text="Regeneratie aanvullendOnttr.filters" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="15" text="M4.7 afsl. onttrekkingsfilter 1" value="Uit" readonly="0"/>
+        <dataPoint pin="16" text="M4.8 afsl. onttrekkingsfilter 2" value="Aan" readonly="0"/>
+      </difDialog>
+      <difDialog position="2.10" text="Regeneratie aanvullendOnttr.filters" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Aanzuigfilter F4.1 vervuild" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Aanzuigfilter F4.2 vervuild" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Ondergrens druk zuigzijde pomp..:" value="-0.4 bar" readonly="0"/>
+        <dataPoint pin="10" text="Vertraging vuilfiltermelding....:" value="10 min" readonly="0"/>
+        <dataPoint pin="15" text="Reset vuilfiltermelding(en).....:" value="Aan" readonly="0"/>
+      </difDialog>
+    </chart>
+    <chart text="Flowregeling TEO">
+      <difDialog position="3.1" text="Flowregeling TEO      dT over TSA" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="dT over TSA te hoog en max debie" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Maximale dT over TSA...........:" value="10.0 °C" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.2" text="Flowregeling TEO       Reg. GKW" userLevel="2" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="W-gewenst" value="0.0 °C" readonly="1"/>
+        <dataPoint pin="2" text="TT5.1 aanv.koude BG t/m 6e" value="0.0 °C" readonly="1"/>
+        <dataPoint pin="3" text="Y-uitgang" value="0.0 %" readonly="1"/>
+        <dataPoint pin="4" text="X-W verschil" value="0.0" readonly="1"/>
+        <dataPoint pin="5" text="R-Reset.....:" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="P-aandeel" value="6.0" readonly="0"/>
+        <dataPoint pin="10" text="I-aandeel" value="3" readonly="0"/>
+        <dataPoint pin="11" text="D-aandeel" value="0" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.3" text="Flowregeling TEO" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Gewenste flow.................:" value="45.0 m3/h" readonly="0"/>
+      </difDialog>
+    </chart>
+    <chart text="Testvenster TEO"/>
+    <chart text="Mastercontroller TEO">
+      <difDialog position="4.1" text="Mastercontroller TEO  Hoofdscherm" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="2" text="Status" value="Uit" readonly="1"/>
+        <dataPoint pin="3" text="Status overig" value="Status" readonly="1"/>
+        <dataPoint pin="4" text="Stand vertragingstijd uit &gt; rust" value="1 min" readonly="1"/>
+        <dataPoint pin="5" text="Bron beschikbaar" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Vertragingstijd uit &gt; rust / rust &gt; uit" value="1 min" readonly="0"/>
+        <dataPoint pin="10" text="Minimale rusttijd" value="1 min" readonly="0"/>
+        <dataPoint pin="15" text="Rust (Na vertragingstijd)" value="Nee" readonly="0"/>
+        <dataPoint pin="16" text="Uit (na vertragingstijd)" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.2" text="Mastercontroller TEO  Noodstop" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="15" text="Handmatige noodstop" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.3" text="Mastercontroller TEO  Drukhandh/vul" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Drukhandhaving actief" value="Nee" readonly="1"/>
+        <dataPoint pin="15" text="Handmatig drukhandhandhaving / vullen starten" value="Nee" readonly="0"/>
+        <dataPoint pin="16" text="Handmatig drukhandhandhaving / vullen stoppen" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.4" text="Mastercontroller TEO  Drukhandh/vul" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Systeem is ontlucht" value="Nee" readonly="1"/>
+        <dataPoint pin="15" text="Bevestiging systeem is ontlucht" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.5" text="Mastercontroller TEO  Drukhandh/vul" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Aantal uitgevoerde drukhandhavingen per etmaal" value="0" readonly="1"/>
+        <dataPoint pin="2" text="Maximale tijd procedure starten drukhandhaving" value="0 s" readonly="1"/>
+        <dataPoint pin="3" text="Stand maximale tijd procedure starten drukhandhaving" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Drukhandhaving actief" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="gestopt.:" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Maximaal aantal drukhandhavingen per etmaal" value="10" readonly="0"/>
+        <dataPoint pin="10" text="Vertragingstijd voor starten drukhandhaving" value="30 s" readonly="0"/>
+        <dataPoint pin="15" text="Reset aantal uitgevoerde drukhandhavingen" value="Ja" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.6" text="Mastercontroller TEO  rukhandhaving" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="2" text="Systeemdruk rust" value="0.0 bar" readonly="1"/>
+        <dataPoint pin="5" text="Lekkage" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Inschakeldruk drukhandhaving" value="0.0 bar" readonly="0"/>
+        <dataPoint pin="10" text="Maximale drukafwijking lekkage" value="2.0 bar" readonly="0"/>
+        <dataPoint pin="11" text="Vertragingstijd melding lekkage" value="30 s" readonly="0"/>
+        <dataPoint pin="12" text="Wachttijd bepaling referentiedruk lekkage" value="25.0 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.7" text="Mastercontroller TEO  Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Laden actief" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Laden gestopt" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="4.8" text="Mastercontroller TEO  Laden" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand vertraging vrijgave laden" value="10 s" readonly="1"/>
+        <dataPoint pin="2" text="Stand vertraging stoppen laden" value="99 s" readonly="1"/>
+        <dataPoint pin="3" text="Tijdblokkering koude-warmtevraag stand" value="0 min" readonly="1"/>
+        <dataPoint pin="5" text="Handmatig gestart" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Vertraging vrijgave laden bij warmtervraag" value="10 s" readonly="0"/>
+        <dataPoint pin="10" text="Vertraging stoppen laden bij geen warmte vraag" value="99 s" readonly="0"/>
+        <dataPoint pin="15" text="Handmatig laden starten" value="Nee" readonly="0"/>
+        <dataPoint pin="16" text="Handmatig laden stoppen" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.9" text="Mastercontroller TEO  Spuien" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Spuien warmebron actief" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Spuien warmebron gestopt" value="Nee" readonly="1"/>
+        <dataPoint pin="15" text="Handmatig puls WB.................:" value="Uit" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.10" text="Mastercontroller TEO  Start/stop" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Selectie" value="1" readonly="1"/>
+        <dataPoint pin="5" text="Laatst gebruikte bron" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Vrijgave 1=hand, 2=Auto WB&lt;&gt;KB,3=Datum,4=Auto op onderhoudsm." value="1" readonly="0"/>
+        <dataPoint pin="10" text="Dag" value="1" readonly="0"/>
+        <dataPoint pin="11" text="Maand" value="4" readonly="0"/>
+        <dataPoint pin="12" text="Uur" value="12" readonly="0"/>
+        <dataPoint pin="13" text="Minuten" value="0" readonly="0"/>
+        <dataPoint pin="15" text="Handmatig spuien....:" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.11" text="Mastercontroller TEO  Instellingen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand" value="25 min" readonly="1"/>
+        <dataPoint pin="9" text="Start sturing" value="80 %" readonly="0"/>
+        <dataPoint pin="10" text="Tijdblokkering koude-warmtevraag voor handbediening" value="0 min" readonly="0"/>
+        <dataPoint pin="15" text="Activeren tijdblokkering koude/warmtevraag" value="Aan" readonly="0"/>
+      </difDialog>
+    </chart>
+    <chart text="Laden TEO">
+      <difDialog position="5.1" text="Laden TEO             Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave van Mastercontroller" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Noodstop van Mastercontroller" value="Ja" readonly="1"/>
+      </difDialog>
+      <difDialog position="5.2" text="Laden TEO             Starten" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="2" text="Start frequentie" value="80.0 Hz" readonly="1"/>
+        <dataPoint pin="3" text="Stand maximale tijd procedure starten" value="150 s" readonly="1"/>
+        <dataPoint pin="6" text="Terugm. pomp FO t.b.v test" value="Aan" readonly="1"/>
+        <dataPoint pin="10" text="Maximale tijd procedure starten" value="180 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.3" text="Laden TEO             Debietreg." userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave debietregeling" value="20 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave debietregeling" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave debietregeling" value="20 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.4" text="Laden TEO             Debietreg." userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="2" text="Gewenste flow" value="45.0 m3/h" readonly="1"/>
+        <dataPoint pin="3" text="Flowafwijking bij start debietregeling" value="2.7 m3/h" readonly="1"/>
+        <dataPoint pin="4" text="Gecorrigeerde wensflow opstarten" value="42.3 m3/h" readonly="1"/>
+        <dataPoint pin="9" text="Minimale sturing" value="56 %" readonly="0"/>
+        <dataPoint pin="10" text="Maximale sturing" value="100 %" readonly="0"/>
+        <dataPoint pin="11" text="Vertragingstijd per volgende trap bij opstarten" value="30 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.5" text="Laden TEO             Debietreg." userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gemeten flow afwijking" value="9.9 m3/h" readonly="1"/>
+        <dataPoint pin="2" text="Gestuurde frequentie" value="0 Hz" readonly="1"/>
+        <dataPoint pin="3" text="Stand bedrijfstijd debietregeling" value="1 min" readonly="1"/>
+        <dataPoint pin="9" text="Minimale bedrijfstijd debietregeling" value="3 min" readonly="0"/>
+        <dataPoint pin="10" text="Maximale flow afwijking" value="20.0 m3/h" readonly="0"/>
+        <dataPoint pin="11" text="Vertraging melding maximale flowafwijking" value="30 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.6" text="Laden TEO             Debietreg." userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="P-Aandeel" value="3" readonly="0"/>
+        <dataPoint pin="10" text="I-Aandeel" value="1 min" readonly="0"/>
+        <dataPoint pin="11" text="D-Aandeel" value="0 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.7" text="Laden TEO             Stoppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave stoppen laden van Mastercontroller" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="5.8" text="Laden TEO             Stoppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="2" text="Stand maximale tijd procedure stoppen" value="99 s" readonly="1"/>
+        <dataPoint pin="6" text="Terugm. pomp FO t.b.v test" value="Aan" readonly="1"/>
+        <dataPoint pin="9" text="Minimale stopsturing" value="70 %" readonly="0"/>
+        <dataPoint pin="10" text="Maximale stopsturing" value="80 %" readonly="0"/>
+        <dataPoint pin="11" text="Maximale tijd procedure stoppen" value="180 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.9" text="Laden TEO             Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave frequentieverhoging" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="5.10" text="Laden TEO             Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde frequentie" value="41 Hz" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verhoging stopsturing" value="2 %" readonly="0"/>
+        <dataPoint pin="11" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.11" text="Laden TEO             Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Gewenste stopdruk" value="1.0 bar" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.12" text="Laden TEO             Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave sluiten kleppen.....:" value="Uit" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding injectieklep....:" value="Uit" readonly="1"/>
+      </difDialog>
+      <difDialog position="5.13" text="Laden TEO             Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde frequentie" value="43.0 Hz" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verlaging stopsturing" value="10 %" readonly="0"/>
+        <dataPoint pin="10" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.14" text="Laden TEO             Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging stoppen frequentieomvormer" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Terugm. pomp FO t.b.v test" value="Aan" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave stoppen frequentieomvormer" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.15" text="Laden TEO             Onttrekbron" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave Pomp uitschakelen en vlinderklep sluiten" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="5.16" text="Laden TEO             Spec.debiet" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gemeten flow/niveauverschil" value="0.0 m3/h/m" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging melden onderschrijding" value="60 min" readonly="0"/>
+        <dataPoint pin="10" text="Minimaal specifiekdebiet" value="0.0 m3/h/m" readonly="0"/>
+      </difDialog>
+    </chart>
+    <chart text="Spuien TEO">
+      <difDialog position="6.1" text="Spuien TEO            Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave van Mastercontroller" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Noodstop van Mastercontroller" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="6.2" text="Spuien TEO            Starten" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="2" text="Start frequentie" value="0.0 Hz" readonly="1"/>
+        <dataPoint pin="3" text="Stand maximale tijd procedure starten" value="0 s" readonly="1"/>
+        <dataPoint pin="6" text="Terugm. pomp FO t.b.v test" value="Uit" readonly="1"/>
+        <dataPoint pin="10" text="Maximale tijd procedure starten" value="60 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.3" text="Spuien TEO            Vlinderklep" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave vlinderklep open" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave vlinderklep open" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Terugmelding vlinderklep onttrekkingsbron" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave vlinderklep open" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.4" text="Spuien TEO            Spuiklep" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave spuiklep open" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave spuiklep open" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding spuiklep open" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave spuiklep" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.5" text="Spuien TEO            Spui-regeling" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave spuien" value="0 s" readonly="1"/>
+        <dataPoint pin="2" text="Gespuide tijd" value="0 min" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave spui-regeling" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Spui-sturing" value="86 %" readonly="0"/>
+        <dataPoint pin="10" text="Tijdvertraging vrijgave spuien" value="0 s" readonly="0"/>
+        <dataPoint pin="11" text="Spui-duur" value="15 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.6" text="Spuien TEO            Stoppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Stoppen door einde spuitijd" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="6.7" text="Spuien TEO            Stoppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="2" text="Stand maximale tijd procedure stoppen" value="80 s" readonly="1"/>
+        <dataPoint pin="6" text="Terugm. pomp FO t.b.v test" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Minimale stopsturing" value="64 %" readonly="0"/>
+        <dataPoint pin="10" text="Maximale stopsturing" value="74 %" readonly="0"/>
+        <dataPoint pin="11" text="Maximale tijd procedure stoppen" value="80 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.8" text="Spuien TEO            Spuiklep" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave sluiten" value="10 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave spuiklep sluiten" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding spuiklep open" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave sluiten spuiklep" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.9" text="Spuien TEO            Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave frequentieverhoging" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave frequentieverhoging" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave frequentieverhoging" value="0 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.10" text="Spuien TEO            Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde sturing" value="0 %" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verhoging stopsturing" value="2 %" readonly="0"/>
+        <dataPoint pin="11" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.11" text="Spuien TEO            Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Gewenste stopdruk" value="2.5 bar" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.12" text="Spuien TEO            Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde sturing" value="0 %" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verlaging stopsturing" value="10 %" readonly="0"/>
+        <dataPoint pin="10" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.13" text="Spuien TEO            Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging stoppen" value="10 s" readonly="1"/>
+        <dataPoint pin="5" text="Terugm. pomp FO t.b.v test" value="Uit" readonly="1"/>
+        <dataPoint pin="6" text="Vrijgave Pomp uitschakelen en vlinderklep sluiten" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave stoppen" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.14" text="Spuien TEO            Spuimeter" userLevel="1" exportAlways="0" conditional="0"/>
+    </chart>
+    <chart text="Dukhandhaving TEO">
+      <difDialog position="7.1" text="Dukhandhaving TEO     Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave van Mastercontroller" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Noodstop" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Laatst gebruikte bron" value="Koude bron" readonly="1"/>
+      </difDialog>
+      <difDialog position="7.2" text="Dukhandhaving TEO     Starten" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gemeten sturing" value="0 %" readonly="1"/>
+        <dataPoint pin="2" text="Stand maximale tijd procedure starten drukhandhaving" value="0 s" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding frequentieomvormer" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Start sturing" value="70 %" readonly="0"/>
+        <dataPoint pin="11" text="Maximale tijd procedure starten drukhandhaving" value="120 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.3" text="Dukhandhaving TEO     Onttrek.bron" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Drukhandhaving" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave vlinderklep openen" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding vlinderklep open" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging  vrijgave vlinderklep open" value="2 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.4" text="Dukhandhaving TEO     Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave frequentieverhoging" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave frequentieverhoging" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave frequentieverhoging" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.5" text="Dukhandhaving TEO     Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde sturing" value="0 %" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verhoging stopsturing" value="6 %" readonly="0"/>
+        <dataPoint pin="10" text="Maximale stopfrequentie.........:" value="43 Hz" readonly="0"/>
+        <dataPoint pin="11" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.6" text="Dukhandhaving TEO     Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="4" text="Inschakeldruk van Mastercontroller" value="1.0 bar" readonly="1"/>
+        <dataPoint pin="9" text="Gewenste stopdruk" value="1.0 bar" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.7" text="Dukhandhaving TEO     Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde sturing" value="0 %" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verlaging stopsturing" value="10 %" readonly="0"/>
+        <dataPoint pin="10" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.8" text="Dukhandhaving TEO     Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging stoppen drukhandhaving" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Terugmelding frequentieomvormer" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Vrijgave Pomp uitschakelen en vlinderklep sluiten" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave stoppen drukhandhaving" value="0 s" readonly="0"/>
+      </difDialog>
+    </chart>
+    <chart text="Systeembeveiliging TEO">
+      <difDialog position="8.1" text="Systeembeveiliging TEOSysteemdruk" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Minimale systeemdrukken" value="0.0 bar" readonly="0"/>
+        <dataPoint pin="10" text="Maximale systeemdrukken" value="5.0 bar" readonly="0"/>
+        <dataPoint pin="11" text="Tijdvertraging voor alarm minimale systeemdruk" value="60 s" readonly="0"/>
+        <dataPoint pin="12" text="Tijdvertraging voor alarm maximale systeemdruk" value="60 s" readonly="0"/>
+        <dataPoint pin="13" text="Minimale systeemdrukken tijdens spuien" value="0.0 bar" readonly="0"/>
+      </difDialog>
+      <difDialog position="8.2" text="Systeembeveiliging TEOFlow" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Minimale flow TEO...............:" value="25 m3/h" readonly="0"/>
+        <dataPoint pin="11" text="Tijdvertraging voor alarm.......:" value="5 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="8.3" text="Systeembeveiliging TEOHardware" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Tijdvertraging voor alarm wateroverlast/storing FO" value="60 s" readonly="0"/>
+      </difDialog>
+    </chart>
+    <chart text="Noodstop TEO">
+      <difDialog position="9.1" text="Noodstop TEO          Reset" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Noodstop van Mastercontrol. TEO" value="Ja" readonly="1"/>
+        <dataPoint pin="6" text="Handnoodstop v.Mastercontrol.TEO" value="Ja" readonly="1"/>
+        <dataPoint pin="15" text="Reset systeembeveiliging" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="9.2" text="Noodstop TEO          Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="6" text="Noodstop van laden warmebron" value="Nee" readonly="1"/>
+        <dataPoint pin="8" text="Noodstop van drukhandhaving" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="9.3" text="Noodstop TEO          Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Noodstop van spuien warmebron" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Noodstop van beveiliging" value="Nee" readonly="1"/>
+      </difDialog>
+    </chart>
+    <chart text="Sturing TEO"/>
+    <chart text="Extra tbv frequentiereg. TEO"/>
+    <chart text="Drukregeling PCV4.2">
+      <difDialog position="10.1" text="Drukregeling PCV4.2   Algemeen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Vertraging vrijgave regeling.....:" value="10 min" readonly="0"/>
+        <dataPoint pin="10" text="Gewenste druk retourleiding PT4.2:" value="0.3 bar" readonly="0"/>
+        <dataPoint pin="11" text="Startwaarde sturing PCV4.1.......:" value="75 %" readonly="0"/>
+        <dataPoint pin="15" text="Drukregeling toestaan............:" value="Uit" readonly="0"/>
+      </difDialog>
+      <difDialog position="10.2" text="Drukregeling PCV4.2   Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Actuele sturing PCV4.1..........:" value="100.0 %" readonly="1"/>
+        <dataPoint pin="5" text="Status drukregeling.............:" value="Uit" readonly="1"/>
+        <dataPoint pin="6" text="PID bevroren i.v.m. filteractie.:" value="Uit" readonly="1"/>
+      </difDialog>
+      <difDialog position="10.3" text="Drukregeling PCV4.2   PID regelklep" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Druk. gewenst:" value="0.3 bar" readonly="1"/>
+        <dataPoint pin="3" text="Y-uitgang" value="93.8 %" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave TCV83.1 voor testen" value="Aan" readonly="1"/>
+        <dataPoint pin="9" text="P-aandeel" value="50.0" readonly="0"/>
+        <dataPoint pin="10" text="I-aandeel" value="2" readonly="0"/>
+        <dataPoint pin="11" text="D-aandeel" value="0" readonly="0"/>
+      </difDialog>
+      <difDialog position="10.4" text="Drukregeling PCV4.2   Handbediening" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Actuele sturing.................:" value="0 %" readonly="1"/>
+        <dataPoint pin="9" text="Handwaarde......................:" value="70 %" readonly="0"/>
+        <dataPoint pin="15" text="Sturing auto/hand...............:" value="Auto" readonly="0"/>
+      </difDialog>
+    </chart>
+    <chart text="Alarmen &amp; service"/>
+  </charts>
+  <notifications>
+    <notification text="Reserve" type="alarm"/>
+    <notification text="Hand-P4.1 pomp TEO" type="alarm"/>
+    <notification text="Hand-P4.2 pomp tussennet" type="alarm"/>
+    <notification text="Hand-P4.3 boosterpomp terugspoel" type="alarm"/>
+    <notification text="Hand-Voeding persluchtcompressor" type="alarm"/>
+    <notification text="Hand-M4.1 omkeerinr. TEO klep 1" type="alarm"/>
+    <notification text="Hand-M4.2 omkeerinr. TEO klep 2" type="alarm"/>
+    <notification text="Hand-M4.3 omkeerinr. TEO klep 3" type="alarm"/>
+    <notification text="Hand-M4.4 omkeerinr. TEO klep 4" type="alarm"/>
+    <notification text="Hand-Vrijgave discfilter TEO" type="alarm"/>
+    <notification text="Hand-Forceer spoelcyclus TEO" type="alarm"/>
+    <notification text="Hand-Reserve" type="alarm"/>
+    <notification text="Hand-Reserve" type="alarm"/>
+    <notification text="Hand-PVC4.1 drukreg.terugspoelkl" type="alarm"/>
+    <notification text="Hand-PVC4.2 drukreg.retourleidin" type="alarm"/>
+    <notification text="Hand-P4.1 sturing freq.reg .TEO" type="alarm"/>
+    <notification text="Hand-Reserve" type="alarm"/>
+    <notification text="Noodstop put TEO" type="alarm"/>
+    <notification text="P4.1 pomp TEO werkschakelaar" type="alarm"/>
+    <notification text="LA4.1 waterdetectie put TEO" type="alarm"/>
+    <notification text="Al. PC4.1 perslucht compressor" type="alarm"/>
+    <notification text="TT4.1 oppervlaktewater TEO-MAX1" type="alarm"/>
+    <notification text="TT4.1 oppervlaktewater TEO-MIN1" type="alarm"/>
+    <notification text="TT4.2 onttrekkingstemp. TEO-MAX1" type="alarm"/>
+    <notification text="TT4.2 onttrekkingstemp. TEO-MIN1" type="alarm"/>
+    <notification text="TT4.5 aanvoer / retour TSA-MAX1" type="alarm"/>
+    <notification text="TT4.5 aanvoer / retour TSA-MIN1" type="alarm"/>
+    <notification text="TT4.6 retour / aanvoer TSA-MAX1" type="alarm"/>
+    <notification text="TT4.6 retour / aanvoer TSA-MIN1" type="alarm"/>
+    <notification text="TT4.7 retour tussennet TSA-MAX1" type="alarm"/>
+    <notification text="TT4.7 retour tussennet TSA-MIN1" type="alarm"/>
+    <notification text="TT4.7 aanvoer tussennet TSA TEO-MAX1" type="alarm"/>
+    <notification text="TT4.7 aanvoer tussennet TSA TEO-MIN1" type="alarm"/>
+    <notification text="Reserve-MAX1" type="alarm"/>
+    <notification text="Reserve-MIN1" type="alarm"/>
+    <notification text="Reserve-MAX1" type="alarm"/>
+    <notification text="Reserve-MIN1" type="alarm"/>
+    <notification text="Reserve-MAX1" type="alarm"/>
+    <notification text="Reserve-MIN1" type="alarm"/>
+    <notification text="Reserve-MAX1" type="alarm"/>
+    <notification text="Reserve-MIN1" type="alarm"/>
+    <notification text="Max tijdsduur spoelen discfilter" type="alarm"/>
+    <notification text="Max aantal spoelacties Bernoulli" type="alarm"/>
+    <notification text="Verstopping TSA OWS" type="alarm"/>
+    <notification text="Aanzuigfilter F4.1 vervuild" type="alarm"/>
+    <notification text="Aanzuigfilter F4.2 vervuild" type="alarm"/>
+    <notification text="Max. aantal drukhandhavingen TEO" type="alarm"/>
+    <notification text="Lekkage TEO" type="alarm"/>
+    <notification text="Onderschr.min.spec.debiet OWS" type="alarm"/>
+    <notification text="Max proceduretijd stopladen TEO" type="alarm"/>
+    <notification text="Max. proc tijd starten laden TEO" type="alarm"/>
+    <notification text="maximale flowafwijking laden TEO" type="alarm"/>
+    <notification text="Max proc tijd stop spuien TEO" type="alarm"/>
+    <notification text="Max.proc.tijd starten spuien TEO" type="alarm"/>
+    <notification text="Max.proceduretijd drukhand.TEO" type="alarm"/>
+    <notification text="Minimale flow TEO" type="alarm"/>
+    <notification text="min druk TEO" type="alarm"/>
+    <notification text="min druk TEO" type="alarm"/>
+    <notification text="max druk TEO" type="alarm"/>
+    <notification text="max druk TEO" type="alarm"/>
+    <notification text="Noodstop van Mastercontrol. TEO" type="alarm"/>
+    <notification text="Al. multilink RK1 OS3 Holenkwart" type="alarm"/>
+    <notification text="Drukversch. over discfilter-MAX1" type="alarm"/>
+    <notification text="Drukversch. over discfilter-MIN1" type="alarm"/>
+    <notification text="Actuele referentie watertemperatuur-MAX1" type="alarm"/>
+    <notification text="Actuele referentie watertemperatuur-MIN1" type="alarm"/>
+    <notification text="Tbv test-MAX1" type="alarm"/>
+    <notification text="Tbv test-MIN1" type="alarm"/>
+  </notifications>
+  <trends>
+    <trend smartComment="" dcxName="03_3C" pinName="FT4.1 flow energie TEO" pinNumber="1" interval="30"/>
+    <trend smartComment="" dcxName="03_3C" pinName="PT4.3 druk aanvoer TSA" pinNumber="2" interval="30"/>
+    <trend smartComment="" dcxName="03_3C" pinName="PT4.4 druk retour TSA" pinNumber="3" interval="30"/>
+    <trend smartComment="" dcxName="03_3C" pinName="LT4.1 niveau opp.water put" pinNumber="4" interval="30"/>
+    <trend smartComment="" dcxName="03_3C" pinName="PT4.1 druk zuigzijde TEO" pinNumber="5" interval="30"/>
+    <trend smartComment="" dcxName="03_3C" pinName="PT4.2 druk perszijde TEO" pinNumber="6" interval="30"/>
+  </trends>
+</documentation>
