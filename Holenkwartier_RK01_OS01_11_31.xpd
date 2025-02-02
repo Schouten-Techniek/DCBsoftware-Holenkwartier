@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation xmlns="http://www.digicontrol.de/TR/PlantDocumentation/1.1" version="1.1" bacnet="0" cadVersion="11.31.A">
+  <summary>
+    <item name="fileName" value="Holenkwartier_RK01_OS01_11_31"/>
+    <item name="fileRevision" value=""/>
+    <item name="projectNumber" value="20191278"/>
+    <item name="plantMer" value="Holen-OS01"/>
+    <item name="plantIdentifier" value="HOLENKWARTIER-RK01-OS01"/>
+    <item name="authorName" value="N.Sijm"/>
+    <item name="authorCompany" value="Schouten Techniek"/>
+    <item name="clientName" value=""/>
+    <item name="clientStreet" value=""/>
+    <item name="clientCity" value=""/>
+    <item name="clientTelephone" value=""/>
+    <item name="plannerName" value=""/>
+    <item name="plannerStreet" value=""/>
+    <item name="plannerCity" value=""/>
+    <item name="plannerTelephone" value=""/>
+    <item name="facilityName" value="Holenkwartier Hoorn"/>
+    <item name="facilityStreet" value=""/>
+    <item name="facilityCity" value="Hoorn"/>
+    <item name="facilityCountry" value=""/>
+  </summary>
+  <charts>
+    <chart text="Hardware [0..55]"/>
+    <chart text="Hardware [56..111]"/>
+    <chart text="Hardware [112..167]"/>
+    <chart text="Hardware [168..223]"/>
+    <chart text="Hardware [224..279]"/>
+    <chart text="Hardware [280..335]"/>
+    <chart text="Hardware [336..391]"/>
+    <chart text="Hardware [392..447]"/>
+    <chart text="Hardware [448..503]"/>
+    <chart text="Hardware [504..559]"/>
+    <chart text="Hardware [560..615]"/>
+    <chart text="Hardware [616..671]"/>
+    <chart text="Hardware [672..727]"/>
+    <chart text="Hardware [728..783]"/>
+    <chart text="Hardware [784..839]"/>
+    <chart text="Hardware [840..895]"/>
+    <chart text="Hardware [896..951]"/>
+    <chart text="Hardware [952..999]"/>
+    <chart text="Verzenden"/>
+    <chart text="Ontvangen"/>
+    <chart text="Testvenster"/>
+    <chart text="Flowregeling bron">
+      <difDialog position="1.1" text="Flowregeling bron     Wens Laden" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="TT1.3 aanvoer KB zijde" value="0.0 °C" readonly="1"/>
+        <dataPoint pin="2" text="Verschil" value="0.0 °C" readonly="1"/>
+        <dataPoint pin="9" text="Setpoint injectietemperatuur" value="7.0 °C" readonly="0"/>
+      </difDialog>
+      <difDialog position="1.2" text="Flowregeling bron     PID Laden" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="W-gewenst" value="0.0 °C" readonly="1"/>
+        <dataPoint pin="2" text="TT1.3 aanvoer KB zijde" value="0.0 °C" readonly="1"/>
+        <dataPoint pin="3" text="Y-uitgang" value="0.0 %" readonly="1"/>
+        <dataPoint pin="9" text="P-aandeel" value="2.0" readonly="0"/>
+        <dataPoint pin="10" text="I-aandeel" value="2" readonly="0"/>
+        <dataPoint pin="11" text="D-aandeel" value="0" readonly="0"/>
+      </difDialog>
+      <difDialog position="1.3" text="Flowregeling bron     Begrenz.Laden" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Sturing PID" value="0 %" readonly="1"/>
+        <dataPoint pin="2" text="Berekende correctie" value="0.0 m3/h" readonly="1"/>
+        <dataPoint pin="9" text="Maximale correctie" value="0.0 m3/h" readonly="0"/>
+        <dataPoint pin="11" text="Tijdvertraging vrijgave" value="5 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="1.4" text="Flowregeling bron     Flow Laden" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gewenste flow verw. bedrijf...:" value="21.0 m3/h" readonly="1"/>
+        <dataPoint pin="3" text="Berekende wensflow" value="25.7 m3/h" readonly="1"/>
+        <dataPoint pin="9" text="Beinvloeding obv ontrekkingstemp: Maximale temperatuur" value="14.0 °C" readonly="0"/>
+        <dataPoint pin="10" text="Beinvloeding obv ontrekkingstemp: Minimale temperatuur" value="7.0 °C" readonly="0"/>
+        <dataPoint pin="11" text="Beinvloeding obv ontrekkingstemp: Maximale flowbeinvloeding" value="0.0 m3/h" readonly="0"/>
+        <dataPoint pin="12" text="Beinvloeding obv ontrekkingstemp: Minimale flowbeinvloeding" value="0.0 m3/h" readonly="0"/>
+      </difDialog>
+      <difDialog position="1.5" text="Flowregeling bron     Wens Ontladen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="TT1.1 aanvoer WB zijde" value="16.1 °C" readonly="1"/>
+        <dataPoint pin="2" text="Verschil.......................:" value="-7.9 °C" readonly="1"/>
+        <dataPoint pin="3" text="Setpoint flow P2.1.............:" value="3.6 m3/h" readonly="1"/>
+        <dataPoint pin="5" text="Koelvraag......................:" value="Ja" readonly="1"/>
+        <dataPoint pin="9" text="Setpoint injectietemperatuur...:" value="16.5 °C" readonly="0"/>
+      </difDialog>
+      <difDialog position="1.6" text="Flowregeling bron     PID Ontladen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="W-gewenst" value="24.0 °C" readonly="1"/>
+        <dataPoint pin="2" text="TT1.1 aanvoer WB zijde" value="16.1 °C" readonly="1"/>
+        <dataPoint pin="3" text="Y-uitgang" value="0.0 %" readonly="1"/>
+        <dataPoint pin="9" text="P-aandeel" value="2.0" readonly="0"/>
+        <dataPoint pin="10" text="I-aandeel" value="6" readonly="0"/>
+        <dataPoint pin="11" text="D-aandeel" value="0" readonly="0"/>
+      </difDialog>
+      <difDialog position="1.7" text="Flowregeling bron     Begrenz.Ontl." userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Sturing PID" value="0 %" readonly="1"/>
+        <dataPoint pin="2" text="Berekende correctie" value="-0.5 m3/h" readonly="1"/>
+        <dataPoint pin="9" text="Maximale correctie" value="0.0 m3/h" readonly="0"/>
+        <dataPoint pin="10" text="Minimale correctie" value="0.0 m3/h" readonly="0"/>
+        <dataPoint pin="11" text="Tijdvertraging vrijgave" value="5 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="1.8" text="Flowregeling bron     Flow Ontladen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="3" text="Berekende wensflow" value="3.1 m3/h" readonly="1"/>
+      </difDialog>
+    </chart>
+    <chart text="Mastercontroller">
+      <difDialog position="2.1" text="Mastercontroller      Hoofdscherm" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="2" text="Status" value="Overgaand" readonly="1"/>
+        <dataPoint pin="3" text="Status overig" value="Status" readonly="1"/>
+        <dataPoint pin="4" text="Stand vertragingstijd uit &gt; rust" value="2 min" readonly="1"/>
+        <dataPoint pin="5" text="Bron beschikbaar" value="Ja" readonly="1"/>
+        <dataPoint pin="9" text="Vertragingstijd uit &gt; rust / rust &gt; uit" value="1 min" readonly="0"/>
+        <dataPoint pin="10" text="Minimale rusttijd" value="1 min" readonly="0"/>
+        <dataPoint pin="15" text="Rust (Na vertragingstijd)" value="Nee" readonly="0"/>
+        <dataPoint pin="16" text="Uit (na vertragingstijd)" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="2.2" text="Mastercontroller      Noodstop" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="15" text="Handmatige noodstop" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="2.3" text="Mastercontroller      Niveau" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Natuurlijk niveau warmebron" value="0.0 mWk" readonly="1"/>
+        <dataPoint pin="2" text="Natuurlijk niveau koudebron" value="0.0 mWk" readonly="1"/>
+        <dataPoint pin="3" text="LT1.1 niveau warme bron" value="0.0 m" readonly="1"/>
+        <dataPoint pin="4" text="LT1.2 niveau koude bron" value="0.0 m" readonly="1"/>
+        <dataPoint pin="9" text="Vertragingstijd opslag 1e rust" value="60 min" readonly="0"/>
+        <dataPoint pin="10" text="Herhalingstijd voor opslag na 1e rust" value="180 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="2.4" text="Mastercontroller      Drukhandh/vul" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Drukhandhaving actief" value="Nee" readonly="1"/>
+        <dataPoint pin="15" text="Handmatig drukhandhandhaving / vullen starten" value="Nee" readonly="0"/>
+        <dataPoint pin="16" text="Handmatig drukhandhandhaving / vullen stoppen" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="2.5" text="Mastercontroller      Drukhandh/vul" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Systeem is ontlucht" value="Nee" readonly="1"/>
+        <dataPoint pin="15" text="Bevestiging systeem is ontlucht" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="2.6" text="Mastercontroller      Drukhandh/vul" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Aantal uitgevoerde drukhandhavingen per etmaal" value="0" readonly="1"/>
+        <dataPoint pin="2" text="Maximale tijd procedure starten drukhandhaving" value="0 s" readonly="1"/>
+        <dataPoint pin="3" text="Stand maximale tijd procedure starten drukhandhaving" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Drukhandhaving actief" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="gestopt.:" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Maximaal aantal drukhandhavingen per etmaal" value="10" readonly="0"/>
+        <dataPoint pin="10" text="Vertragingstijd voor starten drukhandhaving" value="30 s" readonly="0"/>
+        <dataPoint pin="15" text="Reset aantal uitgevoerde drukhandhavingen" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="2.7" text="Mastercontroller      Drukhandhavin" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="PT1.2 drukopnemer TSA" value="1.8 bar" readonly="1"/>
+        <dataPoint pin="2" text="Systeemdruk rust" value="2.7 bar" readonly="1"/>
+        <dataPoint pin="3" text="PT1.1 drukopnemer WB" value="2.0 bar" readonly="1"/>
+        <dataPoint pin="4" text="PT1.3 drukopnemer KB" value="2.0 bar" readonly="1"/>
+        <dataPoint pin="5" text="Lekkage" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Inschakeldruk drukhandhaving" value="1.5 bar" readonly="0"/>
+        <dataPoint pin="10" text="Maximale drukafwijking lekkage" value="1.5 bar" readonly="0"/>
+        <dataPoint pin="11" text="Vertragingstijd melding lekkage" value="180 s" readonly="0"/>
+        <dataPoint pin="12" text="Wachttijd bepaling referentiedruk lekkage" value="25.0 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="2.8" text="Mastercontroller      Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Laden actief" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Laden gestopt" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Ontladen actief" value="Nee" readonly="1"/>
+        <dataPoint pin="8" text="Ontladen gestopt" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="2.9" text="Mastercontroller      Laden" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand vertraging vrijgave laden" value="10 s" readonly="1"/>
+        <dataPoint pin="2" text="Stand vertraging stoppen laden" value="99 s" readonly="1"/>
+        <dataPoint pin="3" text="Tijdblokkering koude-warmtevraag stand" value="1 min" readonly="1"/>
+        <dataPoint pin="5" text="Handmatig gestart" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Vertraging vrijgave laden bij warmtervraag" value="10 s" readonly="0"/>
+        <dataPoint pin="10" text="Vertraging stoppen laden bij geen warmte vraag" value="50 s" readonly="0"/>
+        <dataPoint pin="15" text="Handmatig laden starten" value="Nee" readonly="0"/>
+        <dataPoint pin="16" text="Handmatig laden stoppen" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="2.10" text="Mastercontroller      Ontladen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand vertraging vrijgave ontladen" value="10 s" readonly="1"/>
+        <dataPoint pin="2" text="Stand vertraging stoppen ontladen" value="99 s" readonly="1"/>
+        <dataPoint pin="3" text="Tijdblokkering koude-warmtevraag stand" value="1 min" readonly="1"/>
+        <dataPoint pin="5" text="Handmatig gestart" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Vertraging vrijgave ontladen bij koudevraag" value="10 s" readonly="0"/>
+        <dataPoint pin="10" text="Vertraging stoppen ontladen bij geen koude vraag" value="99 s" readonly="0"/>
+        <dataPoint pin="15" text="Handmatig ontladen starten" value="Nee" readonly="0"/>
+        <dataPoint pin="16" text="Handmatig ontladen stoppen" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="2.11" text="Mastercontroller      Spuien" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Spuien warmebron actief" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Spuien warmebron gestopt" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Spuien koudebron actief" value="Nee" readonly="1"/>
+        <dataPoint pin="8" text="Spuien koudebron gestopt" value="Nee" readonly="1"/>
+        <dataPoint pin="15" text="Handmatige puls WB laatste bron" value="Uit" readonly="0"/>
+        <dataPoint pin="16" text="Handmatige puls KB laatste bron" value="Uit" readonly="0"/>
+      </difDialog>
+      <difDialog position="2.12" text="Mastercontroller      Start/stop" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Selectie" value="1" readonly="1"/>
+        <dataPoint pin="5" text="Laatst gebruikte bron" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Vrijgave 1=hand, 2=Auto WB&lt;&gt;KB,3=Datum,4=Auto op onderhoudsm." value="1" readonly="0"/>
+        <dataPoint pin="10" text="Dag" value="1" readonly="0"/>
+        <dataPoint pin="11" text="Maand" value="4" readonly="0"/>
+        <dataPoint pin="12" text="Uur" value="12" readonly="0"/>
+        <dataPoint pin="13" text="Minuten" value="0" readonly="0"/>
+        <dataPoint pin="15" text="Handmatig spuien....:" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="2.13" text="Mastercontroller      Instellingen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand" value="1 min" readonly="1"/>
+        <dataPoint pin="9" text="Start frequentie" value="32 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Tijdblokkering koude-warmtevraag voor handbediening" value="1 min" readonly="0"/>
+        <dataPoint pin="15" text="Activeren tijdblokkering koude/warmtevraag" value="Uit" readonly="0"/>
+      </difDialog>
+    </chart>
+    <chart text="Laden bd warmebron">
+      <difDialog position="3.1" text="Laden bd warmebron    Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave van Mastercontroller" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Noodstop van Mastercontroller" value="Ja" readonly="1"/>
+      </difDialog>
+      <difDialog position="3.2" text="Laden bd warmebron    Starten" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Terugm. freq.reg.P1.1/P1.3" value="38.4 Hz" readonly="1"/>
+        <dataPoint pin="2" text="Start frequentie" value="40.0 Hz" readonly="1"/>
+        <dataPoint pin="3" text="Stand maximale tijd procedure starten" value="120 s" readonly="1"/>
+        <dataPoint pin="6" text="Bedrijf P1.1 pomp 1 WB" value="Aan" readonly="1"/>
+        <dataPoint pin="10" text="Maximale tijd procedure starten" value="120 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.3" text="Laden bd warmebron    Vlinderklep" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave vlinderklep open" value="6 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave vlinderkleppen open" value="Ja" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding vlinderklep injectiebron open" value="Ja" readonly="1"/>
+        <dataPoint pin="7" text="Terugmelding vlinderklep onttrekkingsbron" value="Ja" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave vlinderkleppen open" value="6 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.4" text="Laden bd warmebron    Injectieklep" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave injectieklep open" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave injectieklep open" value="Ja" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding injectieklep injectiebron open" value="Ja" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave injectieklep" value="0 s" readonly="0"/>
+        <dataPoint pin="10" text="Gemeten flow min." value="10.0 m3/h" readonly="0"/>
+        <dataPoint pin="11" text="Maximale flow gemeten" value="182.0 m3/h" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.5" text="Laden bd warmebron    Debietreg." userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave debietregeling" value="20 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave debietregeling" value="Ja" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave debietregeling" value="20 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.6" text="Laden bd warmebron    Debietreg." userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="FT1.1 flowmeting bron (gecorrigeerd)" value="0.0 m3/h" readonly="1"/>
+        <dataPoint pin="2" text="Gewenste flow" value="0.0 m3/h" readonly="1"/>
+        <dataPoint pin="3" text="Flowafwijking bij start debietregeling" value="0.0 m3/h" readonly="1"/>
+        <dataPoint pin="4" text="Gecorrigeerde wensflow opstarten" value="-1.6 m3/h" readonly="1"/>
+        <dataPoint pin="9" text="Minimale frequentie" value="28.0 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Maximale frequentie" value="53.5 Hz" readonly="0"/>
+        <dataPoint pin="11" text="Vertragingstijd per volgende trap bij opstarten" value="30 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.7" text="Laden bd warmebron    Debietreg." userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gemeten flow afwijking" value="-0.6 m3/h" readonly="1"/>
+        <dataPoint pin="2" text="Gestuurde frequentie" value="32 Hz" readonly="1"/>
+        <dataPoint pin="3" text="Stand bedrijfstijd debietregeling" value="1 min" readonly="1"/>
+        <dataPoint pin="9" text="Minimale bedrijfstijd debietregeling" value="10 min" readonly="0"/>
+        <dataPoint pin="10" text="Maximale flow afwijking" value="10.0 m3/h" readonly="0"/>
+        <dataPoint pin="11" text="Vertraging melding maximale flowafwijking" value="30 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.8" text="Laden bd warmebron    Debietreg." userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="P-Aandeel" value="0.8" readonly="0"/>
+        <dataPoint pin="10" text="I-Aandeel" value="1 min" readonly="0"/>
+        <dataPoint pin="11" text="D-Aandeel" value="0 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.9" text="Laden bd warmebron    OH-Niveau" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Niveau warmebron bij starten laden" value="9.4 mWk" readonly="1"/>
+        <dataPoint pin="2" text="Niveau koudebron bij starten laden" value="11.2 mWk" readonly="1"/>
+        <dataPoint pin="3" text="LT1.1 niveau warme bron" value="8.4 m" readonly="1"/>
+        <dataPoint pin="4" text="LT1.2 niveau koude bron" value="11.9 m" readonly="1"/>
+        <dataPoint pin="9" text="Vertragingstijd opslag laden" value="60 s" readonly="0"/>
+        <dataPoint pin="10" text="Minimaal OH niveauverschil warmebron" value="-1.40 mWk" readonly="0"/>
+        <dataPoint pin="11" text="Maximaal OH niveauverschil koudebron" value="1.40 mWk" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.10" text="Laden bd warmebron    OH-Niveau" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Niveauverschil warmebron" value="-2 mWk" readonly="1"/>
+        <dataPoint pin="2" text="Niveauverschil koudebron" value="-2 mWk" readonly="1"/>
+        <dataPoint pin="9" text="Vertraging melding min.onderhoudsniveau WB tijdens laden" value="10 min" readonly="0"/>
+        <dataPoint pin="10" text="Max.onderhoudsniveau KB laden..:" value="10 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.11" text="Laden bd warmebron    Stoppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave stoppen laden van Mastercontroller" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="3.12" text="Laden bd warmebron    Stoppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Terugm. freq.reg.P1.1/P1.3" value="38 Hz" readonly="1"/>
+        <dataPoint pin="2" text="Stand maximale tijd procedure stoppen" value="180 s" readonly="1"/>
+        <dataPoint pin="6" text="Bedrijf P1.1 pomp 1 WB" value="Aan" readonly="1"/>
+        <dataPoint pin="9" text="Minimale stopfrequentie" value="32 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Maximale stopfrequentie" value="37 Hz" readonly="0"/>
+        <dataPoint pin="11" text="Maximale tijd procedure stoppen" value="150 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.13" text="Laden bd warmebron    Injectiebron" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave sluiten" value="10 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave injectieklep sluiten" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding injectieklep open" value="Ja" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave sluiten injectieklep injectiebron" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.14" text="Laden bd warmebron    Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave frequentieverhoging" value="45 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave frequentieverhoging" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave frequentieverhoging" value="45 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.15" text="Laden bd warmebron    Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde frequentie" value="0 Hz" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verhoging stopfrequentie" value="1 Hz" readonly="0"/>
+        <dataPoint pin="11" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.16" text="Laden bd warmebron    Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="PT1.2 drukopnemer TSA" value="0.8 bar" readonly="1"/>
+        <dataPoint pin="2" text="PT1.1 drukopnemer WB" value="1.4 bar" readonly="1"/>
+        <dataPoint pin="3" text="PT1.3 drukopnemer KB" value="1.1 bar" readonly="1"/>
+        <dataPoint pin="9" text="Gewenste stopdruk" value="2.5 bar" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.17" text="Laden bd warmebron    Injectiebron" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave sluiten vlinderklep injectiebron" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding vlinderklep injectiebron" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="3.18" text="Laden bd warmebron    Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde frequentie" value="35.7 Hz" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verlaging stopfrequentie" value="5 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.19" text="Laden bd warmebron    Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging stoppen frequentieomvormer" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Bedrijf P1.1 pomp 1 WB" value="Aan" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave stoppen frequentieomvormer" value="0 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="3.20" text="Laden bd warmebron    Onttrekbron" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave Pomp uitschakelen en vlinderklep sluiten" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding vlinderklep onttrekkingsbron" value="Ja" readonly="1"/>
+      </difDialog>
+      <difDialog position="3.21" text="Laden bd warmebron    Spec.debiet" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gemeten flow/niveauverschil" value="-17.4 m3/h/m" readonly="1"/>
+        <dataPoint pin="2" text="Niveauverschil" value="-1.0 mWk" readonly="1"/>
+        <dataPoint pin="3" text="FT1.1 flowmeting bron (gecorrigeerd)" value="17.1 m3/h" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging melden onderschrijding" value="60 min" readonly="0"/>
+        <dataPoint pin="10" text="Minimaal specifiekdebiet" value="0.0 m3/h/m" readonly="0"/>
+      </difDialog>
+    </chart>
+    <chart text="Parallelbedrijf Laden">
+      <difDialog position="4.1" text="Parallelbedrijf Laden Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Parallelbedrijf laden actief.........:" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Noodstop van Mastercontroller........:" value="Uit" readonly="1"/>
+      </difDialog>
+      <difDialog position="4.2" text="Parallelbedrijf Laden Starten" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand maximale tijd procedure.:" value="0 s" readonly="1"/>
+        <dataPoint pin="9" text="Pomp bijsch. bij setpoint &gt;...:" value="70.0 m3/h" readonly="0"/>
+        <dataPoint pin="10" text="Inschakelvertraging...........:" value="60 s" readonly="0"/>
+        <dataPoint pin="11" text="Maximale tijd procedure.......:" value="120 s" readonly="0"/>
+        <dataPoint pin="12" text="Min. bedrijfstijd laden voor vrijgave secundaire pomp" value="60 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.3" text="Parallelbedrijf Laden Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Terugmelding Hz-reg. prim. pomp..:" value="60.0 Hz" readonly="1"/>
+        <dataPoint pin="2" text="Terugmelding Hz-reg. sec. pomp...:" value="60.0 Hz" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave proc. bijsch.sec. pomp..:" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Hysterese Hz-prim=Hz-sec.........:" value="3 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Max. frequentie parallelbedrijf..:" value="58.5 Hz" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.4" text="Parallelbedrijf Laden Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Startfrequentie gehaald............:" value="Ja" readonly="1"/>
+        <dataPoint pin="6" text="Vrijg. Hz sec sturen richt. Hz prim:" value="Ja" readonly="1"/>
+        <dataPoint pin="7" text="Vrijgave volgen PID uit Laden......:" value="Ja" readonly="1"/>
+        <dataPoint pin="9" text="Vertraging frequenties levellen....:" value="2 s" readonly="0"/>
+        <dataPoint pin="10" text="Vertraging volgen PID uit Laden....:" value="2 s" readonly="0"/>
+        <dataPoint pin="11" text="Stapgrootte verhogen frequentie....:" value="2 Hz" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.5" text="Parallelbedrijf Laden Stoppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand maximale tijd procedure parallelbedrijf stoppen" value="120 s" readonly="1"/>
+        <dataPoint pin="9" text="Pomp afsch. bij setpoint &lt;....:" value="65.0 m3/h" readonly="0"/>
+        <dataPoint pin="10" text="Inschakelvertraging...........:" value="30 s" readonly="0"/>
+        <dataPoint pin="11" text="Maximale tijd procedure.......:" value="30 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.6" text="Parallelbedrijf Laden Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Minimale stopfrequentie..........:" value="60.0 Hz" readonly="1"/>
+        <dataPoint pin="2" text="Maximale stopfrequentie..........:" value="60.0 Hz" readonly="1"/>
+        <dataPoint pin="3" text="Terugmelding frequentieregelaar..:" value="60.0 Hz" readonly="1"/>
+        <dataPoint pin="5" text="Vrijg. afschakelproc sec. pomp...:" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="4.7" text="Parallelbedrijf Laden Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Stopfrequentie behaald...............:" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Parallelbedrijf laden gestopt........:" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Vertraging stopfrequentie behaald....:" value="3 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.8" text="Parallelbedrijf Laden Pompwisseling" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Actuele prioriteit (1=P1.1, 2=P1.2):" value="1" readonly="1"/>
+        <dataPoint pin="9" text="Prioriteit wisselen na.............:" value="150 h" readonly="0"/>
+        <dataPoint pin="15" text="Handmatig omdraaien prioriteit.....:" value="Uit" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.9" text="Parallelbedrijf Laden Calamiteit" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="15" text="P1.1 buiten bedr. stellen (calamiteit):" value="Ja" readonly="0"/>
+        <dataPoint pin="16" text="P1.2 buiten bedr. stellen (calamiteit):" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.10" text="Parallelbedrijf Laden Afsl. M1.1" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Actuele sturing......................:" value="Dicht" readonly="1"/>
+        <dataPoint pin="6" text="M1.1 afsluiter pomp 1 WB open" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Digitaal stuuralarm M1.1 put WB" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Vertraging DSA...:" value="300 s" readonly="0"/>
+        <dataPoint pin="15" text="Sturing automatisch/handmatig........:" value="Auto" readonly="0"/>
+        <dataPoint pin="16" text="Handmatige sturing...................:" value="Dicht" readonly="0"/>
+      </difDialog>
+      <difDialog position="4.11" text="Parallelbedrijf Laden Afsl. M1.2" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Actuele sturing......................:" value="Dicht" readonly="1"/>
+        <dataPoint pin="6" text="M1.2 afsluiter pomp 2 WB open" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Digitaal stuuralarm M1.2 put WB" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Vertraging DSA...:" value="300 s" readonly="0"/>
+        <dataPoint pin="15" text="Sturing automatisch/handmatig........:" value="Auto" readonly="0"/>
+        <dataPoint pin="16" text="Handmatige sturing...................:" value="Dicht" readonly="0"/>
+      </difDialog>
+    </chart>
+    <chart text="Ontladen bd koudebron">
+      <difDialog position="5.1" text="Ontladen bd koudebron Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave van Mastercontroller" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Noodstop van Mastercontroller" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="5.2" text="Ontladen bd koudebron Starten" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="F0.1 terugmelding frequenti" value="60.0 Hz" readonly="1"/>
+        <dataPoint pin="2" text="Start frequentie" value="45.0 Hz" readonly="1"/>
+        <dataPoint pin="3" text="Stand maximale tijd procedure starten" value="120 s" readonly="1"/>
+        <dataPoint pin="6" text="Bedrijf freqentieregelaar KB" value="Aan" readonly="1"/>
+        <dataPoint pin="10" text="Maximale tijd procedure starten" value="120 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.3" text="Ontladen bd koudebron Vlinderklep" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave vlinderklep open" value="6 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave vlinderkleppen open" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding vlinderklep injectiebron open" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Terugmelding vlinderklep onttrekkingsbron" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave vlinderkleppen open" value="6 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.4" text="Ontladen bd koudebron Injectieklep" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave injectieklep open" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave injectieklep open" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Injectieventiel 6PC1 terugm" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave injectieklep" value="0 s" readonly="0"/>
+        <dataPoint pin="10" text="Minimale flow gemeten" value="10.0 m3/h" readonly="0"/>
+        <dataPoint pin="11" text="Maximale flow gemeten" value="182.0 m3/h" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.5" text="Ontladen bd koudebron Debietreg." userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave debietregeling" value="10 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave debietregeling" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave debietregeling" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.6" text="Ontladen bd koudebron Debietreg." userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="FT1.1 flowmeting bron (gecorrigeerd)" value="17.3 m3/h" readonly="1"/>
+        <dataPoint pin="2" text="Gewenste flow" value="7.0 m3/h" readonly="1"/>
+        <dataPoint pin="3" text="Flowafwijking bij start debietregeling" value="-10.3 m3/h" readonly="1"/>
+        <dataPoint pin="4" text="Gecorrigeerde wensflow opstarten" value="17.3 m3/h" readonly="1"/>
+        <dataPoint pin="9" text="Minimale frequentie" value="26.0 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Maximale frequentie" value="53.5 Hz" readonly="0"/>
+        <dataPoint pin="11" text="Vertragingstijd per volgende trap bij opstarten" value="30 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.7" text="Ontladen bd koudebron Debietreg." userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gemeten flow afwijking" value="-9.9 m3/h" readonly="1"/>
+        <dataPoint pin="2" text="Gestuurde frequentie" value="0 Hz" readonly="1"/>
+        <dataPoint pin="3" text="Stand bedrijfstijd debietregeling" value="1 min" readonly="1"/>
+        <dataPoint pin="9" text="Minimale bedrijfstijd debietregeling" value="1 min" readonly="0"/>
+        <dataPoint pin="10" text="Maximale flow afwijking" value="10.0 m3/h" readonly="0"/>
+        <dataPoint pin="11" text="Vertraging melding maximale flowafwijking" value="30 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.8" text="Ontladen bd koudebron Debietreg." userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="P-Aandeel" value="0.8" readonly="0"/>
+        <dataPoint pin="10" text="I-Aandeel" value="1 min" readonly="0"/>
+        <dataPoint pin="11" text="D-Aandeel" value="0 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.9" text="Ontladen bd koudebron OH-Niveau" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Niveau warmebron bij starten ontladen" value="0.0 mWk" readonly="1"/>
+        <dataPoint pin="2" text="Niveau koudebron bij starten ontladen" value="0.0 mWk" readonly="1"/>
+        <dataPoint pin="3" text="LT1.1 niveau warme bron" value="8.2 m" readonly="1"/>
+        <dataPoint pin="4" text="LT1.2 niveau koude bron" value="11.7 m" readonly="1"/>
+        <dataPoint pin="9" text="Vertragingstijd opslag ontladen" value="60 s" readonly="0"/>
+        <dataPoint pin="10" text="Minimaal OH niveauverschil warmebron" value="1.30 mWk" readonly="0"/>
+        <dataPoint pin="11" text="Maximaal OH niveauverschil koudebron" value="-1.30 mWk" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.10" text="Ontladen bd koudebron OH-Niveau" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Niveauverschil warmebron" value="1 mWk" readonly="1"/>
+        <dataPoint pin="2" text="Niveauverschil koudebron" value="1 mWk" readonly="1"/>
+        <dataPoint pin="9" text="Vertraging melding min.onderhoudsniveau WB tijdens ontladen" value="10 min" readonly="0"/>
+        <dataPoint pin="10" text="Vertraging melding max.onderhoudsniveau KB tijdens ontladen" value="10 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.11" text="Ontladen bd koudebron Stoppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave stoppen ontladen van Mastercontroller" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="5.12" text="Ontladen bd koudebron Stoppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="F0.1 terugmelding frequenti" value="38 Hz" readonly="1"/>
+        <dataPoint pin="2" text="Stand maximale tijd procedure stoppen" value="180 s" readonly="1"/>
+        <dataPoint pin="6" text="Bedrijf freqentieregelaar KB" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Minimale stopfrequentie" value="33 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Maximale stopfrequentie" value="36 Hz" readonly="0"/>
+        <dataPoint pin="11" text="Maximale tijd procedure stoppen" value="180 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.13" text="Ontladen bd koudebron Injectiebron" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave sluiten" value="10 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave injectieklep sluiten" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Injectieventiel 6PC1 terugm" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave sluiten injectieklep injectiebron" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.14" text="Ontladen bd koudebron Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave frequentieverhoging" value="45 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave frequentieverhoging" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave frequentieverhoging" value="45 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.15" text="Ontladen bd koudebron Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde frequentie" value="0 Hz" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verhoging stopfrequentie" value="1 Hz" readonly="0"/>
+        <dataPoint pin="11" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.16" text="Ontladen bd koudebron Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="PT1.2 drukopnemer TSA" value="1.7 bar" readonly="1"/>
+        <dataPoint pin="2" text="PT1.1 drukopnemer WB" value="1.3 bar" readonly="1"/>
+        <dataPoint pin="3" text="PT1.3 drukopnemer KB" value="2.2 bar" readonly="1"/>
+        <dataPoint pin="9" text="Gewenste stopdruk" value="2.5 bar" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.17" text="Ontladen bd koudebron Injectiebron" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave sluiten vlinderklep injectiebron" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding vlinderklep injectiebron" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="5.18" text="Ontladen bd koudebron Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde frequentie" value="0.0 Hz" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verlaging stopfrequentie" value="3 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.19" text="Ontladen bd koudebron Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging stoppen frequentieomvormer" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Bedrijf freqentieregelaar KB" value="Aan" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave stoppen frequentieomvormer" value="0 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="5.20" text="Ontladen bd koudebron Onttrekbron" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave Pomp uitschakelen en vlinderklep sluiten" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding vlinderklep onttrekkingsbron" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="5.21" text="Ontladen bd koudebron Spec.debiet" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gemeten flow/niveauverschil" value="0.0 m3/h/m" readonly="1"/>
+        <dataPoint pin="2" text="Niveauverschil" value="10.8 mWk" readonly="1"/>
+        <dataPoint pin="3" text="FT1.1 flowmeting bron (gecorrigeerd)" value="29.9 m3/h" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging melden onderschrijding" value="60 min" readonly="0"/>
+        <dataPoint pin="10" text="Minimaal specifiekdebiet" value="0.0 m3/h/m" readonly="0"/>
+      </difDialog>
+    </chart>
+    <chart text="Parallelbedrijf Ontladen">
+      <difDialog position="6.1" text="Parallelbedrijf OntladStatus" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Parallelbedrijf onladen actief.......:" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Noodstop van Mastercontroller........:" value="Uit" readonly="1"/>
+      </difDialog>
+      <difDialog position="6.2" text="Parallelbedrijf OntladStarten" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand maximale tijd procedure.:" value="0 s" readonly="1"/>
+        <dataPoint pin="9" text="Pomp bijsch. bij setpoint &gt;...:" value="70.0 m3/h" readonly="0"/>
+        <dataPoint pin="10" text="Inschakelvertraging...........:" value="60 s" readonly="0"/>
+        <dataPoint pin="11" text="Maximale tijd procedure.......:" value="30 s" readonly="0"/>
+        <dataPoint pin="12" text="Min. bedrijfstijd ontladen....:" value="60 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.3" text="Parallelbedrijf OntladFrequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Terugmelding Hz-reg. prim. pomp..:" value="60.0 Hz" readonly="1"/>
+        <dataPoint pin="2" text="Terugmelding Hz-reg. sec. pomp...:" value="60.0 Hz" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave proc. bijsch.sec. pomp..:" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Hysterese Hz-prim=Hz-sec.........:" value="2 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Max. frequentie parallelbedrijf..:" value="58.5 Hz" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.4" text="Parallelbedrijf OntladFrequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Startfrequentie gehaald............:" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Vrijg. Hz sec sturen richt. Hz prim:" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Vrijgave volgen PID uit Ontladen...:" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Vertraging frequenties levellen....:" value="2 s" readonly="0"/>
+        <dataPoint pin="10" text="Vertraging volgen PID uit Ontladen.:" value="2 s" readonly="0"/>
+        <dataPoint pin="11" text="Stapgrootte verhogen frequentie....:" value="2 Hz" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.5" text="Parallelbedrijf OntladStoppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand maximale tijd procedure parallelbedrijf stoppen" value="120 s" readonly="1"/>
+        <dataPoint pin="9" text="Pomp afsch. bij setpoint &lt;....:" value="60.0 m3/h" readonly="0"/>
+        <dataPoint pin="10" text="Inschakelvertraging...........:" value="10 s" readonly="0"/>
+        <dataPoint pin="11" text="Maximale tijd procedure.......:" value="30 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.6" text="Parallelbedrijf OntladFrequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Minimale stopfrequentie..........:" value="60.0 Hz" readonly="1"/>
+        <dataPoint pin="2" text="Maximale stopfrequentie..........:" value="60.0 Hz" readonly="1"/>
+        <dataPoint pin="3" text="Terugmelding frequentieregelaar..:" value="60.0 Hz" readonly="1"/>
+        <dataPoint pin="5" text="Vrijg. afschakelproc sec. pomp...:" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="6.7" text="Parallelbedrijf OntladFrequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Stopfrequentie behaald...............:" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Parallelbedrijf ontladen gestopt.....:" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Vertraging stopfrequentie behaald....:" value="3 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.8" text="Parallelbedrijf OntladPompwisseling" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Actuele prioriteit (1=P1.3, 2=P1.4):" value="1" readonly="1"/>
+        <dataPoint pin="9" text="Prioriteit wisselen na.............:" value="50 h" readonly="0"/>
+        <dataPoint pin="15" text="Handmatig omdraaien prioriteit.....:" value="Uit" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.9" text="Parallelbedrijf OntladCalamiteit" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="15" text="P1.3 buiten bedr. stellen (calamiteit):" value="Ja" readonly="0"/>
+        <dataPoint pin="16" text="P1.4 buiten bedr. stellen (calamiteit):" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.10" text="Parallelbedrijf OntladAfsl. M1.5" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Actuele sturing......................:" value="Dicht" readonly="1"/>
+        <dataPoint pin="6" text="M1.5 afsluiter pomp 1 KB open" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Digitaal stuuralarm M1.5 put KB" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Vertraging DSA...:" value="300 s" readonly="0"/>
+        <dataPoint pin="15" text="Sturing automatisch/handmatig........:" value="Auto" readonly="0"/>
+        <dataPoint pin="16" text="Handmatige sturing...................:" value="Dicht" readonly="0"/>
+      </difDialog>
+      <difDialog position="6.11" text="Parallelbedrijf OntladAfsl. M1.6" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Actuele sturing......................:" value="Dicht" readonly="1"/>
+        <dataPoint pin="6" text="M1.6 afsluiter pomp 2 KB open" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Digitaal stuuralarm M1.6 put KB" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Vertraging DSA...:" value="300 s" readonly="0"/>
+        <dataPoint pin="15" text="Sturing automatisch/handmatig........:" value="Auto" readonly="0"/>
+        <dataPoint pin="16" text="Handmatige sturing...................:" value="Dicht" readonly="0"/>
+      </difDialog>
+    </chart>
+    <chart text="Spuien warmebron">
+      <difDialog position="7.1" text="Spuien warmebron      Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave van Mastercontroller" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Noodstop van Mastercontroller" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="7.2" text="Spuien warmebron      Starten" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Terugm. freq.reg.P1.1/P1.3 met offset" value="0.0 Hz" readonly="1"/>
+        <dataPoint pin="2" text="Start frequentie" value="0.0 Hz" readonly="1"/>
+        <dataPoint pin="3" text="Stand maximale tijd procedure starten" value="0 s" readonly="1"/>
+        <dataPoint pin="6" text="Bedrijf P1.1 pomp 1 WB" value="Uit" readonly="1"/>
+        <dataPoint pin="10" text="Maximale tijd procedure starten" value="99 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.3" text="Spuien warmebron      Vlinderklep" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave vlinderklep open" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave vlinderklep open" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Terugmelding vlinderklep onttrekkingsbron" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave vlinderklep open" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.4" text="Spuien warmebron      Spuiklep" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave spuiklep open" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave spuiklep open" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding spuiklep open" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave spuiklep" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.5" text="Spuien warmebron      Spui-regeling" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave spuien" value="0 s" readonly="1"/>
+        <dataPoint pin="2" text="Gespuide tijd" value="30 min" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave spui-regeling" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Spui-frequentie" value="45 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Tijdvertraging vrijgave spuien" value="0 s" readonly="0"/>
+        <dataPoint pin="11" text="Spui-duur" value="30 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.6" text="Spuien warmebron      OH-Niveau" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Niveau warmebron voor spuien" value="10.2 mWk" readonly="1"/>
+        <dataPoint pin="2" text="Niveau koudebron voor spuien" value="10.3 mWk" readonly="1"/>
+        <dataPoint pin="3" text="LT1.1 niveau warme bron" value="8.4 m" readonly="1"/>
+        <dataPoint pin="4" text="LT1.2 niveau koude bron" value="11.9 m" readonly="1"/>
+        <dataPoint pin="9" text="Vertragingstijd opslag spuien" value="60 s" readonly="0"/>
+        <dataPoint pin="10" text="Minimaal niveauverschil spuien warmebron" value="-2.0 mWk" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.7" text="Spuien warmebron      OH-Niveau" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Niveauverschil warmebron" value="0 mWk" readonly="1"/>
+        <dataPoint pin="2" text="Niveauverschil koudebron" value="0 mWk" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertr.melding min.onderhoudsniveau WB tijdens spuien" value="0 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.8" text="Spuien warmebron      Stoppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Stoppen door einde spuitijd" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="7.9" text="Spuien warmebron      Stoppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Terugm. freq.reg.P1.1/P1.3 met offset" value="39 Hz" readonly="1"/>
+        <dataPoint pin="2" text="Stand maximale tijd procedure stoppen" value="80 s" readonly="1"/>
+        <dataPoint pin="6" text="Bedrijf P1.1 pomp 1 WB" value="Aan" readonly="1"/>
+        <dataPoint pin="9" text="Minimale stopfrequentie" value="39 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Maximale stopfrequentie" value="43 Hz" readonly="0"/>
+        <dataPoint pin="11" text="Maximale tijd procedure stoppen" value="90 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.10" text="Spuien warmebron      Spuiklep" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave sluiten" value="10 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave spuiklep sluiten" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding spuiklep open" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave sluiten spuiklep" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.11" text="Spuien warmebron      Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave frequentieverhoging" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave frequentieverhoging" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave frequentieverhoging" value="0 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.12" text="Spuien warmebron      Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde frequentie" value="0 Hz" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verhoging stopfrequentie" value="1 Hz" readonly="0"/>
+        <dataPoint pin="11" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.13" text="Spuien warmebron      Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="PT1.2 drukopnemer TSA" value="1.7 bar" readonly="1"/>
+        <dataPoint pin="2" text="PT1.1 drukopnemer WB" value="1.3 bar" readonly="1"/>
+        <dataPoint pin="3" text="PT1.3 drukopnemer KB" value="2.2 bar" readonly="1"/>
+        <dataPoint pin="9" text="Gewenste stopdruk" value="2.5 bar" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.14" text="Spuien warmebron      Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde frequentie" value="0.0 Hz" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verlaging stopfrequentie" value="5 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.15" text="Spuien warmebron      Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging stoppen" value="10 s" readonly="1"/>
+        <dataPoint pin="5" text="Bedrijf P1.1 pomp 1 WB" value="Uit" readonly="1"/>
+        <dataPoint pin="6" text="Vrijgave Pomp uitschakelen en vlinderklep sluiten" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave stoppen" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="7.16" text="Spuien warmebron      Spuimeter" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="QT1.1 spuimeter bron" value="999999 m3" readonly="1"/>
+      </difDialog>
+    </chart>
+    <chart text="Spuien koudebron">
+      <difDialog position="8.1" text="Spuien koudebron      Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave van Mastercontroller" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Noodstop van Mastercontroller" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="8.2" text="Spuien koudebron      Starten" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Terugm. freq.reg.P1.2/P1.4 met offset" value="0.0 Hz" readonly="1"/>
+        <dataPoint pin="2" text="Start frequentie" value="0.0 Hz" readonly="1"/>
+        <dataPoint pin="3" text="Stand maximale tijd procedure starten" value="0 s" readonly="1"/>
+        <dataPoint pin="6" text="Bedrijf P1.3 pomp 1 KB" value="Uit" readonly="1"/>
+        <dataPoint pin="10" text="Maximale tijd procedure starten" value="99 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="8.3" text="Spuien koudebron      Vlinderklep" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave vlinderklep open" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave vlinderklep open" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Terugmelding vlinderklep onttrekkingsbron" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave vlinderklep open" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="8.4" text="Spuien koudebron      Spuiklep" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave spuiklep open" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave spuiklep open" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding spuiklep open" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave spuiklep" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="8.5" text="Spuien koudebron      Spui-regeling" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave spuien" value="0 s" readonly="1"/>
+        <dataPoint pin="2" text="Gespuide tijd" value="30 min" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave spui-regeling" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Spui-frequentie" value="45 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Tijdvertraging vrijgave spuien" value="0 s" readonly="0"/>
+        <dataPoint pin="11" text="Spui-duur" value="30 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="8.6" text="Spuien koudebron      OH-Niveau" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Niveau warmebron voor spuien" value="0.0 mWk" readonly="1"/>
+        <dataPoint pin="2" text="Niveau koudebron voor spuien" value="0.0 mWk" readonly="1"/>
+        <dataPoint pin="3" text="LT1.1 niveau warme bron" value="0.0 m" readonly="1"/>
+        <dataPoint pin="4" text="LT1.2 niveau koude bron" value="0.0 m" readonly="1"/>
+        <dataPoint pin="9" text="Vertragingstijd opslag spuien" value="60 s" readonly="0"/>
+        <dataPoint pin="10" text="Minimaal niveauverschil spuien warmebron" value="-2.00 mWk" readonly="0"/>
+      </difDialog>
+      <difDialog position="8.7" text="Spuien koudebron      OH-Niveau" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Niveauverschil warmebron" value="0 mWk" readonly="1"/>
+        <dataPoint pin="2" text="Niveauverschil koudebron" value="0 mWk" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertr.melding min.onderhoudsniveau WB tijdens spuien" value="0 min" readonly="0"/>
+      </difDialog>
+      <difDialog position="8.8" text="Spuien koudebron      Stoppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Stoppen door einde spuitijd" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="8.9" text="Spuien koudebron      Stoppen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Terugm. freq.reg.P1.2/P1.4 met offset" value="0 Hz" readonly="1"/>
+        <dataPoint pin="2" text="Stand maximale tijd procedure stoppen" value="0 s" readonly="1"/>
+        <dataPoint pin="6" text="Bedrijf P1.3 pomp 1 KB" value="Uit" readonly="1"/>
+        <dataPoint pin="9" text="Minimale stopfrequentie" value="39 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Maximale stopfrequentie" value="43 Hz" readonly="0"/>
+        <dataPoint pin="11" text="Maximale tijd procedure stoppen" value="90 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="8.10" text="Spuien koudebron      Spuiklep" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave sluiten" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave spuiklep sluiten" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding spuiklep open" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave sluiten spuiklep" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="8.11" text="Spuien koudebron      Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave frequentieverhoging" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave frequentieverhoging" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave frequentieverhoging" value="0 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="8.12" text="Spuien koudebron      Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde frequentie" value="0 Hz" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verhoging stopfrequentie" value="1 Hz" readonly="0"/>
+        <dataPoint pin="11" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="8.13" text="Spuien koudebron      Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="PT1.2 drukopnemer TSA" value="3.9 bar" readonly="1"/>
+        <dataPoint pin="2" text="PT1.1 drukopnemer WB" value="4.8 bar" readonly="1"/>
+        <dataPoint pin="3" text="PT1.3 drukopnemer KB" value="2.8 bar" readonly="1"/>
+        <dataPoint pin="9" text="Gewenste stopdruk" value="2.5 bar" readonly="0"/>
+      </difDialog>
+      <difDialog position="8.14" text="Spuien koudebron      Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde frequentie" value="0.0 Hz" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verlaging stopfrequentie" value="5 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="8.15" text="Spuien koudebron      Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging stoppen" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Bedrijf P1.3 pomp 1 KB" value="Uit" readonly="1"/>
+        <dataPoint pin="6" text="Vrijgave Pomp uitschakelen en vlinderklep sluiten" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave stoppen" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="8.16" text="Spuien koudebron      Spuimeter" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="QT1.1 spuimeter bron" value="999999 m3" readonly="1"/>
+      </difDialog>
+    </chart>
+    <chart text="Drukhandhaving">
+      <difDialog position="9.1" text="Drukhandhaving        Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Vrijgave van Mastercontroller" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Noodstop" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Laatst gebruikte bron" value="Koude bron" readonly="1"/>
+      </difDialog>
+      <difDialog position="9.2" text="Drukhandhaving        Starten" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gemeten frequentie" value="39 Hz" readonly="1"/>
+        <dataPoint pin="2" text="Stand maximale tijd procedure starten drukhandhaving" value="120 s" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding frequentieomvormer" value="Ja" readonly="1"/>
+        <dataPoint pin="9" text="Start frequentie" value="40 Hz" readonly="0"/>
+        <dataPoint pin="11" text="Maximale tijd procedure starten drukhandhaving" value="120 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="9.3" text="Drukhandhaving        Onttrek.bron" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Drukhandhaving" value="2 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave vlinderklep openen" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Terugmelding vlinderklep open" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging  vrijgave vlinderklep open" value="2 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="9.4" text="Drukhandhaving        Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging vrijgave frequentieverhoging" value="10 s" readonly="1"/>
+        <dataPoint pin="5" text="Vrijgave frequentieverhoging" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave frequentieverhoging" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="9.5" text="Drukhandhaving        Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde frequentie" value="0.0 Hz" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verhoging stopfrequentie" value="3 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Maximale stopfrequentie.........:" value="53 Hz" readonly="0"/>
+        <dataPoint pin="11" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="9.6" text="Drukhandhaving        Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="PT1.2 drukopnemer TSA" value="0.8 bar" readonly="1"/>
+        <dataPoint pin="2" text="PT1.1 drukopnemer WB" value="1.4 bar" readonly="1"/>
+        <dataPoint pin="3" text="PT1.3 drukopnemer KB" value="1.1 bar" readonly="1"/>
+        <dataPoint pin="4" text="Inschakeldruk van Mastercontroller" value="1.5 bar" readonly="1"/>
+        <dataPoint pin="9" text="Gewenste stopdruk" value="4.0 bar" readonly="0"/>
+      </difDialog>
+      <difDialog position="9.7" text="Drukhandhaving        Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Gestuurde frequentie" value="0 Hz" readonly="1"/>
+        <dataPoint pin="9" text="Stapgrootte verlaging stopfrequentie" value="5 Hz" readonly="0"/>
+        <dataPoint pin="10" text="Intervaltijd" value="1 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="9.8" text="Drukhandhaving        Frequentieomv" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Stand tijdvertraging stoppen drukhandhaving" value="0 s" readonly="1"/>
+        <dataPoint pin="5" text="Terugmelding frequentieomvormer" value="Ja" readonly="1"/>
+        <dataPoint pin="6" text="Vrijgave Pomp uitschakelen en vlinderklep sluiten" value="Nee" readonly="1"/>
+        <dataPoint pin="9" text="Tijdvertraging vrijgave stoppen drukhandhaving" value="0 s" readonly="0"/>
+      </difDialog>
+    </chart>
+    <chart text="Systeembeveiliging">
+      <difDialog position="10.1" text="Systeembeveiliging    Systeemdruk" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Minimale systeemdrukken" value="0.6 bar" readonly="0"/>
+        <dataPoint pin="10" text="Maximale systeemdrukken" value="6.0 bar" readonly="0"/>
+        <dataPoint pin="11" text="Tijdvertraging voor alarm minimale systeemdruk" value="30 s" readonly="0"/>
+        <dataPoint pin="12" text="Tijdvertraging voor alarm maximale systeemdruk" value="30 s" readonly="0"/>
+        <dataPoint pin="13" text="Minimale systeemdrukken tijdens spuien" value="0.0 bar" readonly="0"/>
+      </difDialog>
+      <difDialog position="10.2" text="Systeembeveiliging    Flow" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Minimale flow warmebron" value="7.0 m3/h" readonly="0"/>
+        <dataPoint pin="10" text="Minimale flow koudebron......:" value="7.0 m3/h" readonly="0"/>
+        <dataPoint pin="11" text="Tijdvertraging voor alarm" value="30 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="10.3" text="Systeembeveiliging    Niveau" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Maximale niveauverandering omlaag warmebron bedrijf WB" value="-1.70 mWk" readonly="0"/>
+        <dataPoint pin="10" text="Maximale niveauverandering omlaag koudebron bedrijf WB" value="-1.70 mWk" readonly="0"/>
+        <dataPoint pin="11" text="Maximale niveauverandering omhoog warmebron bedrijf WB" value="1.70 mWk" readonly="0"/>
+        <dataPoint pin="12" text="Maximale niveauverandering omhoog koudebron bedrijf WB" value="1.70 mWk" readonly="0"/>
+        <dataPoint pin="13" text="Tijdvertraging voor alarm" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="10.4" text="Systeembeveiliging    Niveau" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Maximale niveauverandering omlaag warmebron bedrijf KB" value="-1.60 mWk" readonly="0"/>
+        <dataPoint pin="10" text="Maximale niveauverandering omlaag koudebron bedrijf KB" value="-1.60 mWk" readonly="0"/>
+        <dataPoint pin="11" text="Maximale niveauverandering omhoog warmebron bedrijf KB" value="1.60 mWk" readonly="0"/>
+        <dataPoint pin="12" text="Maximale niveauverandering omhoog koudebron bedrijf KB" value="1.60 mWk" readonly="0"/>
+        <dataPoint pin="13" text="Tijdvertraging voor alarm" value="10 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="10.5" text="Systeembeveiliging    Hardware" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Tijdvertraging voor alarm wateroverlast/storing FO" value="60 s" readonly="0"/>
+      </difDialog>
+      <difDialog position="10.6" text="Systeembeveiliging    Temperatuur" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="9" text="Max. injectietemp. koude bron...:" value="30.0 °C" readonly="0"/>
+        <dataPoint pin="10" text="Min. injectietemp. warme bron...:" value="0.0 °C" readonly="0"/>
+        <dataPoint pin="11" text="Tijdvertraging voor alarm.......:" value="30 min" readonly="0"/>
+      </difDialog>
+    </chart>
+    <chart text="Noodstop">
+      <difDialog position="11.1" text="Noodstop              Reset" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Noodstop van Mastercontroller" value="Ja" readonly="1"/>
+        <dataPoint pin="6" text="Handnoodstop van Mastercontroller" value="Nee" readonly="1"/>
+        <dataPoint pin="15" text="Reset systeembeveiliging" value="Nee" readonly="0"/>
+      </difDialog>
+      <difDialog position="11.2" text="Noodstop              Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="6" text="Noodstop van laden warmebron" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Noodstop van ontladen koudebron" value="Nee" readonly="1"/>
+        <dataPoint pin="8" text="Noodstop van drukhandhaving" value="Nee" readonly="1"/>
+      </difDialog>
+      <difDialog position="11.3" text="Noodstop              Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Noodstop van spuien warmebron" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Noodstop van spuien koudebron" value="Nee" readonly="1"/>
+        <dataPoint pin="7" text="Noodstop van beveiliging" value="Nee" readonly="1"/>
+        <dataPoint pin="8" text="Noodstop bronnen" value="Uit" readonly="1"/>
+      </difDialog>
+      <difDialog position="11.4" text="Noodstop              Status" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Noodstop uit parallelbedrijf laden....:" value="Nee" readonly="1"/>
+        <dataPoint pin="6" text="Noodstop uit parallelbedrijf ontladen.:" value="Nee" readonly="1"/>
+      </difDialog>
+    </chart>
+    <chart text="Onderhoud">
+      <difDialog position="12.1" text="Onderhoud             Reset" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="15" text="Reset onderhoudsmelding" value="Nee" readonly="0"/>
+      </difDialog>
+    </chart>
+    <chart text="Sturing"/>
+    <chart text="Extra tbv frequentieregelaar"/>
+    <chart text="Urentellers bronpompen">
+      <difDialog position="13.1" text="Urentellers bronpompen" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Bedrijfsuren warme bron BP1.1" value="0 h" readonly="1"/>
+        <dataPoint pin="2" text="Bedrijfsuren warme bron BP1.2" value="0 h" readonly="1"/>
+        <dataPoint pin="3" text="Bedrijfsuren koude bron BP1.3" value="0 h" readonly="1"/>
+        <dataPoint pin="4" text="Bedrijfsuren koude bron BP1.4" value="0 h" readonly="1"/>
+      </difDialog>
+    </chart>
+    <chart text="Bronkeuze"/>
+    <chart text="Warmtewet">
+      <difDialog position="14.1" text="Warmtewet             Warmteleverin" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Warmtevraag....................:" value="0.0 °C" readonly="1"/>
+        <dataPoint pin="2" text="TT2.2 aanvoer transport" value="13.5 °C" readonly="1"/>
+        <dataPoint pin="3" text="Inschakelvertraging actueel....:" value="30 m" readonly="1"/>
+        <dataPoint pin="9" text="Hysterese warmtevraag..........:" value="5.0 °C" readonly="0"/>
+        <dataPoint pin="10" text="Inschakelvertraging alarmering.:" value="30 m" readonly="0"/>
+      </difDialog>
+      <difDialog position="14.2" text="Warmtewet             Warmteleverin" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Alarmmelding actief..............." value="Uit" readonly="1"/>
+        <dataPoint pin="15" text="Blokkering alarm aan / uit.......:" value="Uit" readonly="0"/>
+      </difDialog>
+      <difDialog position="14.3" text="Warmtewet             Koudelevering" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="1" text="Koudevraag.....................:" value="11.0 °C" readonly="1"/>
+        <dataPoint pin="2" text="TT2.2 aanvoer transport" value="13.6 °C" readonly="1"/>
+        <dataPoint pin="3" text="Inschakelvertraging actueel....:" value="30 m" readonly="1"/>
+        <dataPoint pin="9" text="Hysterese koudevraag...........:" value="-5.0 °C" readonly="0"/>
+        <dataPoint pin="10" text="Inschakelvertraging alarmering.:" value="30 m" readonly="0"/>
+      </difDialog>
+      <difDialog position="14.4" text="Warmtewet             Koudelevering" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Alarmmelding actief..............." value="Uit" readonly="1"/>
+        <dataPoint pin="15" text="Blokkering alarm aan / uit.......:" value="Uit" readonly="0"/>
+      </difDialog>
+      <difDialog position="14.5" text="Warmtewet" userLevel="1" exportAlways="0" conditional="0">
+        <dataPoint pin="5" text="Status warmtewet obv pompstoringen...:" value="Uit" readonly="1"/>
+        <dataPoint pin="15" text="Warmtewet bij alle pompen in alarm...:" value="Ja" readonly="0"/>
+      </difDialog>
+      <schDialog position="14.6" text="Warmtewet             24 uurmelding" userLevel="1">
+        <timeRange start="00:00" end="00:00"/>
+        <timeRange start="00:00" end="00:00"/>
+        <timeRange start="00:00" end="00:00"/>
+        <timeRange start="00:00" end="00:00"/>
+        <timeRange start="00:00" end="00:00"/>
+        <timeRange start="00:00" end="00:00"/>
+        <timeRange start="00:00" end="00:00"/>
+        <manual value="0"/>
+      </schDialog>
+    </chart>
+    <chart text="Alarmen &amp; service"/>
+  </charts>
+  <notifications>
+    <notification text="Reserve" type="alarm"/>
+    <notification text="Reserve" type="alarm"/>
+    <notification text="Reserve" type="alarm"/>
+    <notification text="Reserve" type="alarm"/>
+    <notification text="Hand-P1.1 vrijgave pomp 1 WB" type="alarm"/>
+    <notification text="Hand-P1.2 vrijgave pomp 2 WB" type="alarm"/>
+    <notification text="Hand-P1.3 vrijgave pomp 1 KB" type="alarm"/>
+    <notification text="Hand-P1.4 vrijgave pomp 2 KB" type="alarm"/>
+    <notification text="Alarm freq. regelaar P1.1/P1.3" type="alarm"/>
+    <notification text="Alarm freq. regelaar P1.2/P1.4" type="alarm"/>
+    <notification text="Reserve" type="alarm"/>
+    <notification text="Reserve" type="alarm"/>
+    <notification text="Hand-P1.1/P1.3 pomp1 WB/KB freq." type="alarm"/>
+    <notification text="Hand-P1.2/P1.4 pomp2 WB/KB freq." type="alarm"/>
+    <notification text="Hand-M1.3 afsluiter TSA bron" type="alarm"/>
+    <notification text="Hand-M1.4 afsluiter kaarsenfilte" type="alarm"/>
+    <notification text="Reserve" type="alarm"/>
+    <notification text="Reserve" type="alarm"/>
+    <notification text="Reserve" type="alarm"/>
+    <notification text="Reserve" type="alarm"/>
+    <notification text="Hand-PC1.1 injectieklep 1 WB" type="alarm"/>
+    <notification text="Hand-PC1.2 injectieklep 2 WB" type="alarm"/>
+    <notification text="Hand-PC1.3 injectieklep 1 KB" type="alarm"/>
+    <notification text="Hand-PC1.4 injectieklep 2 KB" type="alarm"/>
+    <notification text="Reserve" type="alarm"/>
+    <notification text="Reserve" type="alarm"/>
+    <notification text="Reserve" type="alarm"/>
+    <notification text="Reserve" type="alarm"/>
+    <notification text="Hand-M1.1 afsluiter pomp 1 WB" type="alarm"/>
+    <notification text="Hand-M1.2 afsluiter pomp 2 WB" type="alarm"/>
+    <notification text="Hand-M1.5 afsluiter pomp 1 KB" type="alarm"/>
+    <notification text="Hand-M1.6 afsluiter pomp 2 KB" type="alarm"/>
+    <notification text="Hand-Sturing.freq.reg.P1.1/P1.3" type="alarm"/>
+    <notification text="Hand-Sturing.freq.reg.P1.2/P1.4" type="alarm"/>
+    <notification text="Hand-Reserve" type="alarm"/>
+    <notification text="Hand-Reserve" type="alarm"/>
+    <notification text="nvt-MAX1" type="alarm"/>
+    <notification text="nvt-MIN1" type="alarm"/>
+    <notification text="TT99.1 buitentemperatuur-MAX1" type="alarm"/>
+    <notification text="TT99.1 buitentemperatuur-MIN1" type="alarm"/>
+    <notification text="TT1.1 aanvoer WB zijde-MAX1" type="alarm"/>
+    <notification text="TT1.1 aanvoer WB zijde-MIN1" type="alarm"/>
+    <notification text="TT1.3 aanvoer KB zijde-MAX1" type="alarm"/>
+    <notification text="TT1.3 aanvoer KB zijde-MIN1" type="alarm"/>
+    <notification text="Reserve-MAX1" type="alarm"/>
+    <notification text="Reserve-MIN1" type="alarm"/>
+    <notification text="Reserve-MAX1" type="alarm"/>
+    <notification text="Reserve-MIN1" type="alarm"/>
+    <notification text="Reserve-MAX1" type="alarm"/>
+    <notification text="Reserve-MIN1" type="alarm"/>
+    <notification text="Reserve-MAX1" type="alarm"/>
+    <notification text="Reserve-MIN1" type="alarm"/>
+    <notification text="Reserve-MAX1" type="alarm"/>
+    <notification text="Reserve-MIN1" type="alarm"/>
+    <notification text="nvt-MAX1" type="alarm"/>
+    <notification text="nvt-MIN1" type="alarm"/>
+    <notification text="nvt-MAX1" type="alarm"/>
+    <notification text="nvt-MIN1" type="alarm"/>
+    <notification text="Reserve-MAX1" type="alarm"/>
+    <notification text="Reserve-MIN1" type="alarm"/>
+    <notification text="Reserve-MAX1" type="alarm"/>
+    <notification text="Reserve-MIN1" type="alarm"/>
+    <notification text="Reserve-MAX1" type="alarm"/>
+    <notification text="Reserve-MIN1" type="alarm"/>
+    <notification text="Reserve-MAX1" type="alarm"/>
+    <notification text="Reserve-MIN1" type="alarm"/>
+    <notification text="Maximaal aantal drukhandhavingen" type="alarm"/>
+    <notification text="Lekkage" type="alarm"/>
+    <notification text="L(WB)-OH-min.laden" type="alarm"/>
+    <notification text="L(KB)-OH-max.laden" type="alarm"/>
+    <notification text="Onderschr.min.spec.debiet laden" type="alarm"/>
+    <notification text="Max. proceduretijd stop laden" type="alarm"/>
+    <notification text="Max. proceduretijd starten laden" type="alarm"/>
+    <notification text="Maximale flowafwijking laden" type="alarm"/>
+    <notification text="Max.proceduretijd parallelbedrijf laden starten" type="alarm"/>
+    <notification text="Max.proceduretijd parallelbedrijf laden stoppen" type="alarm"/>
+    <notification text="Digitaal stuuralarm M1.1 put WB" type="alarm"/>
+    <notification text="Digitaal stuuralarm M1.2 put WB" type="alarm"/>
+    <notification text="L(WB)-OH-min.ontladen" type="alarm"/>
+    <notification text="L(KB)-OH-max.ontladen" type="alarm"/>
+    <notification text="Onderschr min.spec.debiet ontlad" type="alarm"/>
+    <notification text="Max proceduretijd stop ontladen" type="alarm"/>
+    <notification text="Max.proc.tijd starten ontladen" type="alarm"/>
+    <notification text="maximale flowafwijking ontladen" type="alarm"/>
+    <notification text="Max.proceduretijd parallelbedrijf ontladen starten" type="alarm"/>
+    <notification text="Max.proceduretijd parallelbedrijf ontladen stoppen" type="alarm"/>
+    <notification text="Digitaal stuuralarm M1.5 put KB" type="alarm"/>
+    <notification text="Digitaal stuuralarm M1.6 put KB" type="alarm"/>
+    <notification text="Max proceduretijd stop spuien WB" type="alarm"/>
+    <notification text="Max.proc.tijd starten spuien WB" type="alarm"/>
+    <notification text="Max proceduretijd stop spuien KB" type="alarm"/>
+    <notification text="Max.proc.tijd starten spuien KB" type="alarm"/>
+    <notification text="Max.proceduretijd drukhandhaving" type="alarm"/>
+    <notification text="Storing FO KB/WB" type="alarm"/>
+    <notification text="Wateroverlast TR/putten" type="alarm"/>
+    <notification text="Minimale flow warmebron" type="alarm"/>
+    <notification text="Minimale flow koudebron" type="alarm"/>
+    <notification text="Min druk TSA" type="alarm"/>
+    <notification text="min druk WB" type="alarm"/>
+    <notification text="min druk KB" type="alarm"/>
+    <notification text="Max.niveauver.oml. WB bedrijf WB" type="alarm"/>
+    <notification text="Max.niveauver.omh.WB bedrijf WB" type="alarm"/>
+    <notification text="Max.niveauver.oml.WB bedrijf KB" type="alarm"/>
+    <notification text="Max.niveauver.omh.WB bedrijf KB" type="alarm"/>
+    <notification text="Noodstop put warme bron" type="alarm"/>
+    <notification text="Noodstop put koude bron" type="alarm"/>
+    <notification text="max druk TSA" type="alarm"/>
+    <notification text="max druk WB" type="alarm"/>
+    <notification text="max druk KB" type="alarm"/>
+    <notification text="Max.niveauver.oml.KB bedrijf WB" type="alarm"/>
+    <notification text="Max.niveauver.omh.KB bedrijf WB" type="alarm"/>
+    <notification text="Max.niveauver.oml.KB bedrijf KB" type="alarm"/>
+    <notification text="Max.niveauver.omh.KB bedrijf KB" type="alarm"/>
+    <notification text="Temperatuurstoring bronsysteem" type="alarm"/>
+    <notification text="Drukverlies tussennet PT2.1" type="alarm"/>
+    <notification text="Noodstop van Mastercontroller" type="alarm"/>
+    <notification text="24 uursmelding" type="alarm"/>
+    <notification text="Alarm warmtelevering 1" type="alarm"/>
+    <notification text="Alarm warmtelevering 2" type="alarm"/>
+    <notification text="Alarm koudelevering 1" type="alarm"/>
+    <notification text="Alarm koudelevering 2" type="alarm"/>
+    <notification text="Al. multilink RK01-OS01" type="alarm"/>
+    <notification text="Bronflow gewenst (tbv test)-MAX1" type="alarm"/>
+    <notification text="Bronflow gewenst (tbv test)-MIN1" type="alarm"/>
+    <notification text="Terugm. freq.reg.P1.1/P1.3 met offset-MAX1" type="alarm"/>
+    <notification text="Terugm. freq.reg.P1.1/P1.3 met offset-MIN1" type="alarm"/>
+    <notification text="Terugm. freq.reg.P1.2/P1.4 met offset-MAX1" type="alarm"/>
+    <notification text="Terugm. freq.reg.P1.2/P1.4 met offset-MIN1" type="alarm"/>
+    <notification text="FT1.1 flowmeting bron (gecorrigeerd)-MAX1" type="alarm"/>
+    <notification text="FT1.1 flowmeting bron (gecorrigeerd)-MIN1" type="alarm"/>
+  </notifications>
+  <trends/>
+</documentation>
